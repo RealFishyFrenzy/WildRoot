@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438c6452879b88041b3ab8f27ed28d7a, type: 3}
+  m_Name: GlassRecipe
+  m_EditorClassIdentifier: Assembly-CSharp::CraftingRecipe
+  recipeName: Glass
+  ingredients:
+  - item: {fileID: 11400000, guid: 2b93e46b5c650f543930551e10eae635, type: 2}
+    amount: 4
+  - item: {fileID: 11400000, guid: 161353ecad58e9145be1ce5b91fe9a6c, type: 2}
+    amount: 1
+  outputItem: {fileID: 11400000, guid: 046a21f271d77a74cb606de3761d9b58, type: 2}
+  outputAmount: 1
