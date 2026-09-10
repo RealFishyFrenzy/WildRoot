@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e69ea4fa3e0b80f41a8b6ef35a3a9e5b, type: 3}
+  m_Name: Goldfish
+  m_EditorClassIdentifier: Assembly-CSharp::AnimalData
+  species: {fileID: 11400000, guid: 145efb3bd4bacaa4b9121f288f74ad26, type: 2}
+  prefab: {fileID: 6444013846943922082, guid: 5665f482e69101541957e71003b58ff9, type: 3}
+  baseMaxHunger: 100
+  baseMaxHealth: 100
+  foodLossPerGameHour: 5

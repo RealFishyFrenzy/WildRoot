@@ -30,6 +30,9 @@ public class Furnace : MonoBehaviour, IInteractable
             return;
         }
 
+        if (recipes == null)
+            return;
+
         foreach (CraftingRecipe recipe in recipes)
         {
             if (recipe == null ||
@@ -43,23 +46,17 @@ public class Furnace : MonoBehaviour, IInteractable
             CraftingIngredient mainIngredient =
                 recipe.ingredients[0];
 
-            if (mainIngredient.item != heldItem)
+            if (mainIngredient == null || mainIngredient.item != heldItem)
                 continue;
 
             if (!CraftingSystem.TryCraft(inventory, recipe))
             {
                 Debug.Log(
-                    $"Missing ingredients for {recipe.recipeName}."
+                    $"Cannot craft {recipe.recipeName}: check ingredients, inventory space, and recipe settings."
                 );
 
                 return;
             }
-
-            HotbarUI hotbarUI =
-                FindAnyObjectByType<HotbarUI>();
-
-            if (hotbarUI != null)
-                hotbarUI.Refresh();
 
             Debug.Log(
                 $"Crafted {recipe.outputAmount} " +

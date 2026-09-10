@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
-using System.Xml.Serialization;
 
 public class HotbarUI : MonoBehaviour
 {
@@ -20,6 +19,17 @@ public class HotbarUI : MonoBehaviour
     [SerializeField] private TMP_Text[] quantityTexts;
 
     private int lastSelectedSlot = -1;
+
+    private void OnEnable()
+    {
+        inventory.Changed += Refresh;
+        Refresh();
+    }
+
+    private void OnDisable()
+    {
+        inventory.Changed -= Refresh;
+    }
 
     private void Start()
     {
@@ -53,27 +63,18 @@ public class HotbarUI : MonoBehaviour
             {
                 itemIcons[i].sprite = slot.item.icon;
                 itemIcons[i].enabled = true;
-
-                if (slot.item.stackable && slot.quantity > 1)
-                {
-                    quantityTexts[i].text = slot.quantity.ToString();
-                }
-                else
-                {
-                    quantityTexts[i].text = "";
-                }
             }
             else
             {
                 itemIcons[i].sprite = null;
                 itemIcons[i].enabled = false;
-                quantityTexts[i].text = "";
             }
+
+            UpdateQuantityText(quantityTexts[i], slot);
         }
     }
 
     private Coroutine itemTextRoutine;
-
 
     private void ShowSelectedItemText()
     {
@@ -98,8 +99,8 @@ public class HotbarUI : MonoBehaviour
     }
 
     private void UpdateQuantityText(
-    TMP_Text quantityText,
-    InventorySlot slot)
+        TMP_Text quantityText,
+        InventorySlot slot)
     {
         if (slot == null || slot.IsEmpty)
         {

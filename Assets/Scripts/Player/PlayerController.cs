@@ -4,7 +4,17 @@ public class PlayerController : MonoBehaviour
 {
     public static PlayerController Instance { get; private set; }
 
-    public bool ControlsEnabled { get; private set; } = true;
+    private bool controlsEnabled = true;
+    private int blockedInputFrame = -1;
+
+    public bool ControlsEnabled => controlsEnabled &&
+        blockedInputFrame != Time.frameCount &&
+        !(InventoryUI.Instance != null && InventoryUI.Instance.IsOpen);
+
+    public void BlockControlsForCurrentFrame()
+    {
+        blockedInputFrame = Time.frameCount;
+    }
 
     private void Awake()
     {
@@ -19,6 +29,6 @@ public class PlayerController : MonoBehaviour
 
     public void SetControlsEnabled(bool enabled)
     {
-        ControlsEnabled = enabled;
+        controlsEnabled = enabled;
     }
 }

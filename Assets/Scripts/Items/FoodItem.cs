@@ -7,7 +7,7 @@ public class FoodItem : ItemData
 
     public override bool Use(GameObject target)
     {
-        if (target.TryGetComponent(out Animal animal))
+        if (target != null && target.TryGetComponent(out Animal animal) && animal.AnimalData != null)
         {
             animal.Feed(foodValue);
             return true;

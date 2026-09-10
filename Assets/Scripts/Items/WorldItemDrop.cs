@@ -89,15 +89,17 @@ public class WorldItemDrop : MonoBehaviour
         if (inventory == null || item == null)
             return;
 
-        inventory.AddItem(item, quantity);
+        int accepted = inventory.AddItemPartial(item, quantity);
+        if (accepted == 0)
+            return;
 
-        HotbarUI hotbarUI = FindAnyObjectByType<HotbarUI>();
+        quantity -= accepted;
+        Debug.Log($"Picked up {accepted} {item.itemName}.");
 
-        if (hotbarUI != null)
-            hotbarUI.Refresh();
-
-        Debug.Log($"Picked up {quantity} {item.itemName}.");
-
-        Destroy(gameObject);
+        if (quantity == 0)
+        {
+            canPickup = false;
+            Destroy(gameObject);
+        }
     }
 }

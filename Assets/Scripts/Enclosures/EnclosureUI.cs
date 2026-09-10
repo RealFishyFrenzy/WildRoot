@@ -16,11 +16,20 @@ public class EnclosureUI : MonoBehaviour
     [SerializeField] private Transform animalList;
     [SerializeField] private GameObject animalEntryTemplate;
 
+    [Header("Animal Storage")]
+    [SerializeField] private AnimalInventory animalInventory;
+
     private AnimalEnclosure currentEnclosure;
 
     private void Awake()
     {
         Instance = this;
+
+        if (animalInventory == null)
+        {
+            animalInventory =
+                FindAnyObjectByType<AnimalInventory>();
+        }
     }
 
     private void Start()
@@ -66,39 +75,71 @@ public class EnclosureUI : MonoBehaviour
 
         foreach (AnimalInstance animal in currentEnclosure.Animals)
         {
-            // Create a new UI entry for this animal.
+            if (animal == null)
+                continue;
+
             GameObject entry =
                 Instantiate(animalEntryTemplate, animalList);
 
             entry.SetActive(true);
 
-            // Set the animal's name and species.
-            TMP_Text entryText =
-                entry.GetComponentInChildren<TMP_Text>();
+            Transform nameTransform = entry.transform.Find("AnimalName");
+            TMP_Text entryText = nameTransform != null ? nameTransform.GetComponent<TMP_Text>() : entry.GetComponentInChildren<TMP_Text>();
 
             if (entryText != null)
             {
                 entryText.text =
-                    $"{animal.animalName}\n{animal.speciesName}";
+                    $"{animal.animalName} ({animal.SpeciesName})";
             }
 
-            // Make the animal entry clickable.
-            Button entryButton =
-                entry.GetComponent<Button>();
+            Transform buttonTransform = entry.transform.Find("RemoveButton");
+            Button takeButton = buttonTransform != null ? buttonTransform.GetComponent<Button>() : entry.GetComponentInChildren<Button>();
 
-            if (entryButton != null)
+            if (takeButton != null)
             {
                 AnimalInstance capturedAnimal = animal;
 
-                entryButton.onClick.AddListener(() =>
+                takeButton.onClick.AddListener(() =>
                 {
-                    Debug.Log(
-                        $"Selected {capturedAnimal.animalName} - " +
-                        $"{capturedAnimal.speciesName}"
-                    );
+                    TakeAnimal(capturedAnimal);
                 });
             }
         }
+    }
+
+    private void TakeAnimal(AnimalInstance animal)
+    {
+        if (animalInventory == null)
+        {
+            animalInventory = FindAnyObjectByType<AnimalInventory>();
+        }
+
+        if (animal == null ||
+            currentEnclosure == null ||
+            animalInventory == null)
+        {
+            return;
+        }
+
+        bool removed =
+            currentEnclosure.RemoveAnimal(animal);
+
+        if (!removed)
+        {
+            Debug.LogWarning(
+                $"Could not remove {animal.animalName} from enclosure."
+            );
+
+            return;
+        }
+
+        animalInventory.AddAnimal(animal);
+
+        Debug.Log(
+            $"Took {animal.animalName} from {currentEnclosure.EnclosureName}."
+        );
+
+        Refresh();
     }
 
     private void ClearAnimalList()

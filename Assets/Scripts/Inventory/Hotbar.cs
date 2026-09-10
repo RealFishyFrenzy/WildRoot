@@ -31,7 +31,8 @@ public class Hotbar : MonoBehaviour
         }
     }
 
-    private void Update()
+    // PlayerActions calls this before processing clicks so a slot change takes effect immediately.
+    public void HandleSelectionInput()
     {
         if (!PlayerController.Instance.ControlsEnabled)
             return;
@@ -42,9 +43,10 @@ public class Hotbar : MonoBehaviour
 
     private void HandleNumberKeys()
     {
-        for (int i = 0; i < hotbarSize; i++)
+        for (int i = 0; i < Mathf.Min(hotbarSize, 10); i++)
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1 + i))
+            KeyCode key = i == 9 ? KeyCode.Alpha0 : KeyCode.Alpha1 + i;
+            if (Input.GetKeyDown(key))
             {
                 SelectSlot(i);
             }

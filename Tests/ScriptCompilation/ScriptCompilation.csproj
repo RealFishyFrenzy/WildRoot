@@ -1,0 +1,21 @@
+<Project>
+  <PropertyGroup>
+    <BaseOutputPath>../../Temp/ScriptCompilation/bin/</BaseOutputPath>
+    <BaseIntermediateOutputPath>../../Temp/ScriptCompilation/obj/</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <!-- Inspector-assigned fields are expected to look unassigned to the standalone compiler. -->
+    <NoWarn>CS0649;CS0414</NoWarn>
+    <UnityEditorDirectory Condition="'$(UnityEditorDirectory)' == ''">C:/Program Files/Unity/Hub/Editor/6000.5.0f1/Editor</UnityEditorDirectory>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Assets/Scripts/**/*.cs" />
+    <Reference Include="$(UnityEditorDirectory)/Data/Managed/UnityEngine/*.dll" />
+    <Reference Include="../../Library/ScriptAssemblies/UnityEngine.UI.dll" />
+    <Reference Include="../../Library/ScriptAssemblies/Unity.TextMeshPro.dll" />
+  </ItemGroup>
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+</Project>

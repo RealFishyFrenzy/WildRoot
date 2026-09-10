@@ -1,46 +1,38 @@
-using UnityEngine;
+using System.Collections.Generic;
 
 public static class CraftingSystem
 {
-    public static bool CanCraft(
-        PlayerInventory inventory,
-        CraftingRecipe recipe)
+    public static bool CanCraft(PlayerInventory inventory, CraftingRecipe recipe)
     {
-        if (inventory == null || recipe == null)
-            return false;
-
-        foreach (CraftingIngredient ingredient in recipe.ingredients)
-        {
-            if (ingredient.item == null)
-                return false;
-
-            if (!inventory.HasItem(ingredient.item, ingredient.amount))
-                return false;
-        }
-
-        return true;
+        return inventory != null && TryGetIngredients(recipe, out var ingredients) &&
+            inventory.CanExchange(ingredients, recipe.outputItem, recipe.outputAmount);
     }
 
-    public static bool TryCraft(
-        PlayerInventory inventory,
-        CraftingRecipe recipe)
+    public static bool TryCraft(PlayerInventory inventory, CraftingRecipe recipe)
     {
-        if (!CanCraft(inventory, recipe))
+        return inventory != null && TryGetIngredients(recipe, out var ingredients) &&
+            inventory.TryExchange(ingredients, recipe.outputItem, recipe.outputAmount);
+    }
+
+    private static bool TryGetIngredients(
+        CraftingRecipe recipe, out Dictionary<ItemData, int> ingredients)
+    {
+        ingredients = new Dictionary<ItemData, int>();
+        if (recipe == null || recipe.outputItem == null || recipe.outputAmount <= 0 ||
+            recipe.ingredients == null || recipe.ingredients.Length == 0)
             return false;
 
         foreach (CraftingIngredient ingredient in recipe.ingredients)
         {
-            inventory.RemoveItem(
-                ingredient.item,
-                ingredient.amount
-            );
+            if (ingredient == null || ingredient.item == null || ingredient.amount <= 0)
+                return false;
+
+            ingredients.TryGetValue(ingredient.item, out int existing);
+            if (ingredient.amount > int.MaxValue - existing)
+                return false;
+
+            ingredients[ingredient.item] = existing + ingredient.amount;
         }
-
-        inventory.AddItem(
-            recipe.outputItem,
-            recipe.outputAmount
-        );
-
         return true;
     }
 }

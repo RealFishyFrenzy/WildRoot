@@ -13,19 +13,10 @@ public class PlayerInteraction : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
     }
 
-    private void Update()
+    public void TryInteract()
     {
         if (!PlayerController.Instance.ControlsEnabled)
             return;
-
-        if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(1))
-        {
-            TryInteract();
-        }
-    }
-
-    private void TryInteract()
-    {
         Vector2 interactionPoint =
             (Vector2)transform.position +
             playerMovement.FacingDirection * interactionDistance;

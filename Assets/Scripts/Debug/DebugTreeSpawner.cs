@@ -6,6 +6,9 @@ public class DebugTreeSpawner : MonoBehaviour
 
     private void Update()
     {
+        if (PlayerController.Instance != null && !PlayerController.Instance.ControlsEnabled)
+            return;
+
         if (Input.GetKeyDown(KeyCode.T))
         {
             SpawnTreeAtMouse();

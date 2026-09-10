@@ -42,4 +42,12 @@ public class AnimalEnclosure : MonoBehaviour, IInteractable
     {
         EnclosureUI.Instance.Open(this);
     }
+
+    public bool RemoveAnimal(AnimalInstance animal)
+    {
+        if (animal == null)
+            return false;
+
+        return animals.Remove(animal);
+    }
 }

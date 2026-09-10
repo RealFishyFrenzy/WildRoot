@@ -15,7 +15,7 @@ public class AnimalInventory : MonoBehaviour
         animals.Add(animal);
 
         Debug.Log(
-            $"Captured {animal.animalName} the {animal.speciesName}! " +
+            $"Captured {animal.animalName} the {animal.SpeciesName}! " +
             $"Animals owned: {animals.Count}"
         );
     }

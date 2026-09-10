@@ -23,8 +23,20 @@ public class CatchableAnimal : ToolTarget
         if (toolType != requiredTool)
             return false;
 
+        if (animal == null)
+            animal = GetComponent<Animal>();
+
+        if (animalInventory == null)
+            animalInventory = FindAnyObjectByType<AnimalInventory>();
+
         if (animal == null || animalInventory == null)
             return false;
+
+        if (!animal.enabled)
+            return false;
+
+        // Stop clock notifications before taking the snapshot (Destroy is deferred).
+        animal.enabled = false;
 
         AnimalInstance capturedAnimal = animal.GetAnimalInstance();
 

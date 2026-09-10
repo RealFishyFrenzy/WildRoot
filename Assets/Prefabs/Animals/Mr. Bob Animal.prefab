@@ -107,11 +107,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f313ebd49d55a140b5a7ef397b9a82c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Animal
+  animalData: {fileID: 11400000, guid: e08a7e040c8202849bef17924dbd6318, type: 2}
   animalName: Bob
-  speciesName: Goldfish
   foodLevel: 50
-  maxFoodLevel: 100
-  animalPrefab: {fileID: 0}
+  health: 100
+  ageYears: 0
+  sex: 1
 --- !u!61 &2168066105124712877
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -170,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5348032b9f969e44ae8b033f6797b5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CatchableAnimal
-  requiredTool: 6
+  requiredTool: 7
   health: 3
   shakeAmount: 3
   shakeDuration: 0.12

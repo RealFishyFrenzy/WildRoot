@@ -46,3 +46,6 @@ sysinfo.txt
 *.apk
 *.aab
 *.unitypackage
+
+# Local WildRoot development dashboard
+WildRootDevelopmentHub/

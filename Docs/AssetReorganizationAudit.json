@@ -1,0 +1,2131 @@
+{
+  "verification": {
+    "changedPaths": 140,
+    "failures": [],
+    "files": 351,
+    "metas": 200
+  },
+  "moves": [
+    {
+      "from": "Assets/Animal Info",
+      "to": "Assets/Data/Animals"
+    },
+    {
+      "from": "Assets/Data/Animals/Animal",
+      "to": "Assets/Data/Animals/Definitions"
+    },
+    {
+      "from": "Assets/Item",
+      "to": "Assets/Data/Items"
+    },
+    {
+      "from": "Assets/Data/Items/FoodItem",
+      "to": "Assets/Data/Items/Food"
+    },
+    {
+      "from": "Assets/Recipes",
+      "to": "Assets/Data/Recipes"
+    },
+    {
+      "from": "Assets/Dialogues",
+      "to": "Assets/Data/Dialogues"
+    },
+    {
+      "from": "Assets/Mr. Bob Animal.prefab",
+      "to": "Assets/Prefabs/Animals/Mr. Bob Animal.prefab"
+    },
+    {
+      "from": "Assets/Prefabs/Tree.prefab",
+      "to": "Assets/Prefabs/Resources/Tree.prefab"
+    },
+    {
+      "from": "Assets/Prefabs/RockNode.prefab",
+      "to": "Assets/Prefabs/Resources/RockNode.prefab"
+    },
+    {
+      "from": "Assets/Prefabs/CoalNode Variant.prefab",
+      "to": "Assets/Prefabs/Resources/CoalNode Variant.prefab"
+    },
+    {
+      "from": "Assets/Prefabs/IronNode Variant.prefab",
+      "to": "Assets/Prefabs/Resources/IronNode Variant.prefab"
+    },
+    {
+      "from": "Assets/Prefabs/DirtClump.prefab",
+      "to": "Assets/Prefabs/Resources/DirtClump.prefab"
+    },
+    {
+      "from": "Assets/Prefabs/SandClump.prefab",
+      "to": "Assets/Prefabs/Resources/SandClump.prefab"
+    },
+    {
+      "from": "Assets/Prefabs/WorldItemDrop.prefab",
+      "to": "Assets/Prefabs/Items/WorldItemDrop.prefab"
+    },
+    {
+      "from": "Assets/Prefabs/DialogueResponseButton.prefab",
+      "to": "Assets/Prefabs/UI/DialogueResponseButton.prefab"
+    },
+    {
+      "from": "Assets/Tiles/Terrarin/WorldTerrain.prefab",
+      "to": "Assets/Prefabs/World/WorldTerrain.prefab"
+    },
+    {
+      "from": "Assets/Tiles/Terrarin",
+      "to": "Assets/Tiles/Terrain"
+    },
+    {
+      "from": "Assets/Art/FishPlaceholder.png",
+      "to": "Assets/Art/Animals/FishPlaceholder.png"
+    },
+    {
+      "from": "Assets/Art/Character.PNG",
+      "to": "Assets/Art/Characters/Character.PNG"
+    },
+    {
+      "from": "Assets/Art/Portrait.png",
+      "to": "Assets/Art/UI/Portrait.png"
+    },
+    {
+      "from": "Assets/Art/Axe.png",
+      "to": "Assets/Art/Items/Axe.png"
+    },
+    {
+      "from": "Assets/Art/Net.png",
+      "to": "Assets/Art/Items/Net.png"
+    },
+    {
+      "from": "Assets/Art/PickaxePlaceholder.png",
+      "to": "Assets/Art/Items/PickaxePlaceholder.png"
+    },
+    {
+      "from": "Assets/Art/ShovelPlaceholder.png",
+      "to": "Assets/Art/Items/ShovelPlaceholder.png"
+    },
+    {
+      "from": "Assets/Art/FishFood.png",
+      "to": "Assets/Art/Items/FishFood.png"
+    },
+    {
+      "from": "Assets/Art/Coal-Placeholder.png",
+      "to": "Assets/Art/Items/Coal-Placeholder.png"
+    },
+    {
+      "from": "Assets/Art/Dirt-Placeholder.png",
+      "to": "Assets/Art/Items/Dirt-Placeholder.png"
+    },
+    {
+      "from": "Assets/Art/Glass-Placeholder.png",
+      "to": "Assets/Art/Items/Glass-Placeholder.png"
+    },
+    {
+      "from": "Assets/Art/IronBar-Placeholder.png",
+      "to": "Assets/Art/Items/IronBar-Placeholder.png"
+    },
+    {
+      "from": "Assets/Art/RawIron-Placeholder.png",
+      "to": "Assets/Art/Items/RawIron-Placeholder.png"
+    },
+    {
+      "from": "Assets/Art/Sand-Placeholder.png",
+      "to": "Assets/Art/Items/Sand-Placeholder.png"
+    },
+    {
+      "from": "Assets/Art/StonePlaceholder.png",
+      "to": "Assets/Art/Items/StonePlaceholder.png"
+    },
+    {
+      "from": "Assets/Art/Wood.png",
+      "to": "Assets/Art/Items/Wood.png"
+    },
+    {
+      "from": "Assets/Art/TreePlaceholder.png",
+      "to": "Assets/Art/Environment/TreePlaceholder.png"
+    },
+    {
+      "from": "Assets/Art/RockPlaceholder.png",
+      "to": "Assets/Art/Environment/RockPlaceholder.png"
+    },
+    {
+      "from": "Assets/Art/CoalNode-Placeholder.png",
+      "to": "Assets/Art/Environment/CoalNode-Placeholder.png"
+    },
+    {
+      "from": "Assets/Art/IronNode-Placeholder.png",
+      "to": "Assets/Art/Environment/IronNode-Placeholder.png"
+    },
+    {
+      "from": "Assets/Art/Dirt-Clump-Placeholder.png",
+      "to": "Assets/Art/Environment/Dirt-Clump-Placeholder.png"
+    },
+    {
+      "from": "Assets/Art/Sand-Clump-Placeholder.png",
+      "to": "Assets/Art/Environment/Sand-Clump-Placeholder.png"
+    },
+    {
+      "from": "Assets/Art/Furnace-Placeholder.png",
+      "to": "Assets/Art/Environment/Furnace-Placeholder.png"
+    },
+    {
+      "from": "Assets/Art/TankPlaceholder.png",
+      "to": "Assets/Art/Environment/TankPlaceholder.png"
+    },
+    {
+      "from": "Assets/Scripts/EnclosureUI.cs",
+      "to": "Assets/Scripts/Enclosures/EnclosureUI.cs"
+    },
+    {
+      "from": "Assets/Scripts/UI",
+      "to": "Assets/Scripts/Animals/UI"
+    },
+    {
+      "from": "Assets/Scripts/WorldItemDrop.cs",
+      "to": "Assets/Scripts/Items/WorldItemDrop.cs"
+    },
+    {
+      "from": "Assets/InputSystem_Actions.inputactions",
+      "to": "Assets/Settings/InputSystem_Actions.inputactions"
+    },
+    {
+      "from": "Assets/DefaultVolumeProfile.asset",
+      "to": "Assets/Settings/DefaultVolumeProfile.asset"
+    }
+  ],
+  "originalFiles": [
+    {
+      "before": "Assets/Animal Info.meta",
+      "after": "Assets/Data/Animals.meta",
+      "sha256": "7C74F68E26B0127599D446DD231C4C3BD5B5F1044448EB4C9B736187926E0F53",
+      "guid": "7078ba5660bee1e4b97290a65304a016"
+    },
+    {
+      "before": "Assets/Art.meta",
+      "after": "Assets/Art.meta",
+      "sha256": "311E46FDEE73A2B4EC7CBD44E91712044DF2CAC1FE158A91090360F704FB2090",
+      "guid": "b6ca70313afd8f549bdfad4256d24634"
+    },
+    {
+      "before": "Assets/DefaultVolumeProfile.asset",
+      "after": "Assets/Settings/DefaultVolumeProfile.asset",
+      "sha256": "4789B43834DD5EFB32EEC4C3B436BAF0895C9F8CF2A0624121DA8DD812EE984A"
+    },
+    {
+      "before": "Assets/DefaultVolumeProfile.asset.meta",
+      "after": "Assets/Settings/DefaultVolumeProfile.asset.meta",
+      "sha256": "037700FC76EE8E15BF57A6608BF0229B50B9BA78A1095A943FE0ADD01A6BF5C5",
+      "guid": "3f9215ea0144899419cfbc0957140d3f"
+    },
+    {
+      "before": "Assets/Dialogues.meta",
+      "after": "Assets/Data/Dialogues.meta",
+      "sha256": "8DEE5CD98B625B5BBC183D03A2B2B123317F6A675324FB6EF705F6AF344700DC",
+      "guid": "cbefba6c0f02cb04089b2a4e40ce76a5"
+    },
+    {
+      "before": "Assets/InputSystem_Actions.inputactions",
+      "after": "Assets/Settings/InputSystem_Actions.inputactions",
+      "sha256": "1C6CBB519D65ECFE19A29231735B7F54741A20AC1A8AD4F46A18E1BFB28A3C39"
+    },
+    {
+      "before": "Assets/InputSystem_Actions.inputactions.meta",
+      "after": "Assets/Settings/InputSystem_Actions.inputactions.meta",
+      "sha256": "E2DF3DE96691137DC24B37BD9009E7BE17040F3E5CD6D5401B2CD9D8AE2C9C1D",
+      "guid": "2bcd2660ca9b64942af0de543d8d7100"
+    },
+    {
+      "before": "Assets/Item.meta",
+      "after": "Assets/Data/Items.meta",
+      "sha256": "E71D8CE21BFACB0B292E7454EE2CD3A7A7AFF5B5CC8B3BDD83FBA544774FBF0F",
+      "guid": "99237d6c17589e14ea2cd1df1aa306f4"
+    },
+    {
+      "before": "Assets/Mr. Bob Animal.prefab",
+      "after": "Assets/Prefabs/Animals/Mr. Bob Animal.prefab",
+      "sha256": "9ADF97E4FE73948915EA031F30480F37EB51FB9E5283B9C60756ABB600BF8BFB"
+    },
+    {
+      "before": "Assets/Mr. Bob Animal.prefab.meta",
+      "after": "Assets/Prefabs/Animals/Mr. Bob Animal.prefab.meta",
+      "sha256": "8BC70BFDC91962880EDADF856F5F84392C3A940D7817F9907ED49B360457A5B8",
+      "guid": "5665f482e69101541957e71003b58ff9"
+    },
+    {
+      "before": "Assets/Prefabs.meta",
+      "after": "Assets/Prefabs.meta",
+      "sha256": "02FF43929C157C7A9834003E525ED22453140F147FB14912FAC6DED4FB2D0B49",
+      "guid": "4091ad59432ec874c9a2fcd9a2afcef5"
+    },
+    {
+      "before": "Assets/Recipes.meta",
+      "after": "Assets/Data/Recipes.meta",
+      "sha256": "F8E176DA8655A7526389A7A863ECE7641C809E2AB100286BAAA09366C2663748",
+      "guid": "e0a8e81ea9016cb4183a4921d51d0957"
+    },
+    {
+      "before": "Assets/Scenes.meta",
+      "after": "Assets/Scenes.meta",
+      "sha256": "A80A7B316E7D7CE80C8A01ECB374702A04E91228A0729629C894C70250BAEA5D",
+      "guid": "109e9bdd0fcc649c5bc59085c35bdc83"
+    },
+    {
+      "before": "Assets/Scripts.meta",
+      "after": "Assets/Scripts.meta",
+      "sha256": "97BF36F851496B75B7B3B4F12F863D5BC3C86F669A3B5BCAE9E6C0146EAB676B",
+      "guid": "86d47a380be354747875f0efbdfc0b3f"
+    },
+    {
+      "before": "Assets/Settings.meta",
+      "after": "Assets/Settings.meta",
+      "sha256": "0B5BA35DAAE66CBFCFA17BF61091AEAB7F3BED07681F8DB7BED3FB72D178C2D4",
+      "guid": "0220aab0833d04faeb927d84ca6cc40c"
+    },
+    {
+      "before": "Assets/TextMesh Pro.meta",
+      "after": "Assets/TextMesh Pro.meta",
+      "sha256": "8529D84D190A68AEB1A16E0A90308081BD30A738DBCC63C63B2A93C53B9A11B3",
+      "guid": "f54d1bd14bd3ca042bd867b519fee8cc"
+    },
+    {
+      "before": "Assets/Tiles.meta",
+      "after": "Assets/Tiles.meta",
+      "sha256": "482B7FD0EE0D36BB0CF53717092E890A13A6A9FDC0FB5FB1D11250E5087F0750",
+      "guid": "ce81ff703e586d445b34bd9c9f5cf62c"
+    },
+    {
+      "before": "Assets/UniversalRenderPipelineGlobalSettings.asset",
+      "after": "Assets/UniversalRenderPipelineGlobalSettings.asset",
+      "sha256": "A903B89D50FB9AEF29E8D5C6EF8D680A5509E89514043CF26D1F1226FA3A3F7B"
+    },
+    {
+      "before": "Assets/UniversalRenderPipelineGlobalSettings.asset.meta",
+      "after": "Assets/UniversalRenderPipelineGlobalSettings.asset.meta",
+      "sha256": "746A38B93F8F49B644FF6893456CF24DB401E5C342AAAE3864E91560D37C5422",
+      "guid": "93b439a37f63240aca3dd4e01d978a9f"
+    },
+    {
+      "before": "Assets/Animal Info/Animal.meta",
+      "after": "Assets/Data/Animals/Definitions.meta",
+      "sha256": "59E35CB907429C2F954BBE89F6079EABCAAA14DF01E5A8BB1A70A8A06CD78257",
+      "guid": "486f9ceb0ce105d42aa735885b4922e9"
+    },
+    {
+      "before": "Assets/Animal Info/Species.meta",
+      "after": "Assets/Data/Animals/Species.meta",
+      "sha256": "93F01F7A6CE208E800EBE7D1432E8CD7B619C18DCA1049C6C2223282C160B826",
+      "guid": "d4b35518031bbb9439ab03cf84f5c1e3"
+    },
+    {
+      "before": "Assets/Animal Info/Animal/Goldfish.asset",
+      "after": "Assets/Data/Animals/Definitions/Goldfish.asset",
+      "sha256": "29C185D071D812DE9980F7F1EFB500648E032EEA4D96CB93F304AE8ED3AF780C"
+    },
+    {
+      "before": "Assets/Animal Info/Animal/Goldfish.asset.meta",
+      "after": "Assets/Data/Animals/Definitions/Goldfish.asset.meta",
+      "sha256": "14788B2B2329D1254A5DC3D6BF8884E466831C91D5969AA4CC4C8645906E6E33",
+      "guid": "e08a7e040c8202849bef17924dbd6318"
+    },
+    {
+      "before": "Assets/Animal Info/Species/Species-Goldfish.asset",
+      "after": "Assets/Data/Animals/Species/Species-Goldfish.asset",
+      "sha256": "7821EF9BA3F63736A36C46FD180F7B449CDD79CA28055AE9BF21967D8B0C3A0C"
+    },
+    {
+      "before": "Assets/Animal Info/Species/Species-Goldfish.asset.meta",
+      "after": "Assets/Data/Animals/Species/Species-Goldfish.asset.meta",
+      "sha256": "87D656C0484FB10CFCDA896BED5DC3FE9E899BB8340B6EACA1D919C30D0BE7D2",
+      "guid": "145efb3bd4bacaa4b9121f288f74ad26"
+    },
+    {
+      "before": "Assets/Art/Axe.png",
+      "after": "Assets/Art/Items/Axe.png",
+      "sha256": "235D3E8DA957809C5E5ABD64B6CA9E5ABFD52B86B97C2B52F96D5525706BEE09"
+    },
+    {
+      "before": "Assets/Art/Axe.png.meta",
+      "after": "Assets/Art/Items/Axe.png.meta",
+      "sha256": "97480F15357653A58D6F29F9CF9E8C8D7DA906E75908E7CCCE6C3869E8C8BC3D",
+      "guid": "4c12fae001b868941b2de8f8d3546895"
+    },
+    {
+      "before": "Assets/Art/Character.PNG",
+      "after": "Assets/Art/Characters/Character.PNG",
+      "sha256": "F053CB56A7D43C2E46157FBF1E1BD36768BDCEC78B21EB413BA41AC024E21B10"
+    },
+    {
+      "before": "Assets/Art/Character.PNG.meta",
+      "after": "Assets/Art/Characters/Character.PNG.meta",
+      "sha256": "366DD0C8E9B473766EFC36B941017AAA47094C575047BC0CC30C09F8394B94AE",
+      "guid": "51d0cfbb38f1f344b8609374e6621310"
+    },
+    {
+      "before": "Assets/Art/Coal-Placeholder.png",
+      "after": "Assets/Art/Items/Coal-Placeholder.png",
+      "sha256": "5B723F2CCCB8D38DD5AB698A04F6851CA12787B1D290BDE424B0D772A594AC12"
+    },
+    {
+      "before": "Assets/Art/Coal-Placeholder.png.meta",
+      "after": "Assets/Art/Items/Coal-Placeholder.png.meta",
+      "sha256": "06A71B99A5C389A5C472D88F75F3BD35068E17F3DF91D117076B9F68AF956F48",
+      "guid": "9a084c5c74b686a40bc9b60b3acf6cd4"
+    },
+    {
+      "before": "Assets/Art/CoalNode-Placeholder.png",
+      "after": "Assets/Art/Environment/CoalNode-Placeholder.png",
+      "sha256": "C3655847E7106CF88540E4256E95D9415BC11E9CA72DEFF1DE0DFBE8EC1982B0"
+    },
+    {
+      "before": "Assets/Art/CoalNode-Placeholder.png.meta",
+      "after": "Assets/Art/Environment/CoalNode-Placeholder.png.meta",
+      "sha256": "74E5464C3727D6E8D6AFA4F3EED443B1F521C2FB6AFFFAE3CBA6F6CB5F5AC46F",
+      "guid": "da69e5177ce2d7a4486023e58196a3b1"
+    },
+    {
+      "before": "Assets/Art/Dirt-Clump-Placeholder.png",
+      "after": "Assets/Art/Environment/Dirt-Clump-Placeholder.png",
+      "sha256": "1D3D36137CB78AE6140A1281EE0907158070CA15D29E2E565DFD2709361A5817"
+    },
+    {
+      "before": "Assets/Art/Dirt-Clump-Placeholder.png.meta",
+      "after": "Assets/Art/Environment/Dirt-Clump-Placeholder.png.meta",
+      "sha256": "2B7583213339FB1CE41A2B863167F741E8F19ECC2628E83D3DAC07C0057CCE32",
+      "guid": "6ee59b4c580bf39469973e93f3560e41"
+    },
+    {
+      "before": "Assets/Art/Dirt-Placeholder.png",
+      "after": "Assets/Art/Items/Dirt-Placeholder.png",
+      "sha256": "C692EE6EFD260C4E078A545AAAA65894792DF371268E6E07B42346EF51C06417"
+    },
+    {
+      "before": "Assets/Art/Dirt-Placeholder.png.meta",
+      "after": "Assets/Art/Items/Dirt-Placeholder.png.meta",
+      "sha256": "CA5E134F3BA215E7EC2C11801CDD32E682A8B98D3C2E880A9AB34E59C68B0E01",
+      "guid": "0f8b6859d313af44facd5034e3a65a2a"
+    },
+    {
+      "before": "Assets/Art/FishFood.png",
+      "after": "Assets/Art/Items/FishFood.png",
+      "sha256": "E995FDBF4ECF1D45F0ABE09917409DA0DA7B399BE3E3D15FED638C4D75B7DBA9"
+    },
+    {
+      "before": "Assets/Art/FishFood.png.meta",
+      "after": "Assets/Art/Items/FishFood.png.meta",
+      "sha256": "CDF30627401DA1869D3CC9383FD990EEFB01DB2D9760903054B45884FBE1D97E",
+      "guid": "cb348bc12ee4bb4488169efe57d8c924"
+    },
+    {
+      "before": "Assets/Art/FishPlaceholder.png",
+      "after": "Assets/Art/Animals/FishPlaceholder.png",
+      "sha256": "8E8C471F4A25C38EE9CCA585001BEB92E2A7F4C60D8FD31C080D6956CDA8C532"
+    },
+    {
+      "before": "Assets/Art/FishPlaceholder.png.meta",
+      "after": "Assets/Art/Animals/FishPlaceholder.png.meta",
+      "sha256": "4754921FE41F6B38FD2028EFC812EE096295F4F9C3E90386DE871870CCEACC2C",
+      "guid": "c1dc6c822ab8b514a85c8d8fce795f76"
+    },
+    {
+      "before": "Assets/Art/Furnace-Placeholder.png",
+      "after": "Assets/Art/Environment/Furnace-Placeholder.png",
+      "sha256": "3A98C673537ADD32AD12625D413574D324A46AE95B1BDAD9EC46CC9E58DE96AE"
+    },
+    {
+      "before": "Assets/Art/Furnace-Placeholder.png.meta",
+      "after": "Assets/Art/Environment/Furnace-Placeholder.png.meta",
+      "sha256": "339D473E5D5F68FD326EB314B0796B362B5F2C14E98D9020C6A85779A22F47D0",
+      "guid": "f7b3a8970bad17d4a839f03ae1af0dc7"
+    },
+    {
+      "before": "Assets/Art/Glass-Placeholder.png",
+      "after": "Assets/Art/Items/Glass-Placeholder.png",
+      "sha256": "6C0C5B6147DDCE4263827E8760F42A4346734B5D1F020D22AD103568D7F1C097"
+    },
+    {
+      "before": "Assets/Art/Glass-Placeholder.png.meta",
+      "after": "Assets/Art/Items/Glass-Placeholder.png.meta",
+      "sha256": "865E2DAD129ED5D9C364D555CA334BDA515EB67EA6CF0DA151CF25C7A2543DDC",
+      "guid": "0e68998a30da09544a8f66326c277f44"
+    },
+    {
+      "before": "Assets/Art/IronBar-Placeholder.png",
+      "after": "Assets/Art/Items/IronBar-Placeholder.png",
+      "sha256": "90435F44621C33D6D1A958B335C0B198198CBEC48E64605E39A4EDA5D40FAD94"
+    },
+    {
+      "before": "Assets/Art/IronBar-Placeholder.png.meta",
+      "after": "Assets/Art/Items/IronBar-Placeholder.png.meta",
+      "sha256": "18C4019865CB36FED4D127F79E2CB7840D4764092F2A117CD38DF21BA33E70B7",
+      "guid": "c804862ce466c09439d1b7330fc95ba1"
+    },
+    {
+      "before": "Assets/Art/IronNode-Placeholder.png",
+      "after": "Assets/Art/Environment/IronNode-Placeholder.png",
+      "sha256": "50B3C7B3CEF14FB1E3A4378E45A7D56D25F9308D134007A4BB6123F08AD9E8E5"
+    },
+    {
+      "before": "Assets/Art/IronNode-Placeholder.png.meta",
+      "after": "Assets/Art/Environment/IronNode-Placeholder.png.meta",
+      "sha256": "C69E30F4E1592DFF2FCDD0AAD48E5F802CFDE5D52C114851287079B544D68D42",
+      "guid": "e3c30615fa7c422498e01b695d2ce09b"
+    },
+    {
+      "before": "Assets/Art/Map.meta",
+      "after": "Assets/Art/Map.meta",
+      "sha256": "EA38164C5A3C19DF0ECD27BAB1A7E8CCF3F452EA1DB951B4591427F5F949FF06",
+      "guid": "8805dc4ee4d68894d86eb6699400c5f5"
+    },
+    {
+      "before": "Assets/Art/Net.png",
+      "after": "Assets/Art/Items/Net.png",
+      "sha256": "42CF772D0BFA6C7243E334AD646CDDE22C7284E51B84405672561C8EF6488D4E"
+    },
+    {
+      "before": "Assets/Art/Net.png.meta",
+      "after": "Assets/Art/Items/Net.png.meta",
+      "sha256": "1DA0B6DF3B9C679480ED3C7AEC9346A97D10C75C258CDF422F026286F5CC305D",
+      "guid": "543ed09895df94d448a530104e1fb400"
+    },
+    {
+      "before": "Assets/Art/PickaxePlaceholder.png",
+      "after": "Assets/Art/Items/PickaxePlaceholder.png",
+      "sha256": "4A20223886042374F52A24CE0DF682A3E397F122DF29CD12FC7560661F739E42"
+    },
+    {
+      "before": "Assets/Art/PickaxePlaceholder.png.meta",
+      "after": "Assets/Art/Items/PickaxePlaceholder.png.meta",
+      "sha256": "5CB040886A26D599E68D770F2D976AD79F1FABC2E869114AA6CD444987977E2E",
+      "guid": "242feea29fb99cd498eb7e7904ee4e27"
+    },
+    {
+      "before": "Assets/Art/Portrait.png",
+      "after": "Assets/Art/UI/Portrait.png",
+      "sha256": "689C4309344B009A2E05B58420DA78623FD36D1D8F2C030F62BDA4F75E35E798"
+    },
+    {
+      "before": "Assets/Art/Portrait.png.meta",
+      "after": "Assets/Art/UI/Portrait.png.meta",
+      "sha256": "4B0AFC29DE5CB76D4A8F4115C56691970F45EA33F200C9A4BE059F9771DC5B9B",
+      "guid": "6e592dbd4b46e8a4bb571871b5102b5f"
+    },
+    {
+      "before": "Assets/Art/RawIron-Placeholder.png",
+      "after": "Assets/Art/Items/RawIron-Placeholder.png",
+      "sha256": "7D499692ABDCEA63A232748B47F279530C8653FB72070AFEBFF532DDD7C6A2B0"
+    },
+    {
+      "before": "Assets/Art/RawIron-Placeholder.png.meta",
+      "after": "Assets/Art/Items/RawIron-Placeholder.png.meta",
+      "sha256": "3AC8FCF47B33C654F66202B0CCBBA0C7067F937A8C56A2B2EF038BE3E1797256",
+      "guid": "ad5f433f0cee41a47800a8b7d3e2e754"
+    },
+    {
+      "before": "Assets/Art/RockPlaceholder.png",
+      "after": "Assets/Art/Environment/RockPlaceholder.png",
+      "sha256": "AF904A3E905E5EA83F048D47CE8F94764DD22398167F1B617360602B440E16EB"
+    },
+    {
+      "before": "Assets/Art/RockPlaceholder.png.meta",
+      "after": "Assets/Art/Environment/RockPlaceholder.png.meta",
+      "sha256": "F73BE7D65C2397889A9690043D1821C744B5712087428E4D2319543FE17706C6",
+      "guid": "6c17e95ad7f5da84b96ad257ecd88a3e"
+    },
+    {
+      "before": "Assets/Art/Sand-Clump-Placeholder.png",
+      "after": "Assets/Art/Environment/Sand-Clump-Placeholder.png",
+      "sha256": "6718FE631E23E226DF9E65D98375126AE602366F9B23A248CAB2BC40ACE6B5E1"
+    },
+    {
+      "before": "Assets/Art/Sand-Clump-Placeholder.png.meta",
+      "after": "Assets/Art/Environment/Sand-Clump-Placeholder.png.meta",
+      "sha256": "A9227FCCE0148DB5C4C74BC8D6EF6A0A63B3C2B08EBC45209626441C26154B55",
+      "guid": "734fe72f32e37a748a8c3264a0faf67d"
+    },
+    {
+      "before": "Assets/Art/Sand-Placeholder.png",
+      "after": "Assets/Art/Items/Sand-Placeholder.png",
+      "sha256": "944156D830FF1920838CE8230423A84B629234568E7F3EF3DB8BBB76FC2DCB22"
+    },
+    {
+      "before": "Assets/Art/Sand-Placeholder.png.meta",
+      "after": "Assets/Art/Items/Sand-Placeholder.png.meta",
+      "sha256": "F2105158B98CC76615EDD76313B53A63D31BA23E33E9FCE8B479B81C5876FD6B",
+      "guid": "c6685ddc54e05a24eaf644bb9f71010c"
+    },
+    {
+      "before": "Assets/Art/ShovelPlaceholder.png",
+      "after": "Assets/Art/Items/ShovelPlaceholder.png",
+      "sha256": "A6525E1662272414F9405D7CB445329E0BA7DBF00A831A60B6E4C82F4CD2A4EC"
+    },
+    {
+      "before": "Assets/Art/ShovelPlaceholder.png.meta",
+      "after": "Assets/Art/Items/ShovelPlaceholder.png.meta",
+      "sha256": "B6E5852A28EE565851365D79FD3A9490DEF2A31C9C10BD87475D59927EF7F67E",
+      "guid": "53efbe28cf5c27b4b841e08f295d40fe"
+    },
+    {
+      "before": "Assets/Art/StonePlaceholder.png",
+      "after": "Assets/Art/Items/StonePlaceholder.png",
+      "sha256": "AE928CF26CDA6D89DADF32D3E89BCB05C3D60D226C43AEA5A84A1DB3B71D6E03"
+    },
+    {
+      "before": "Assets/Art/StonePlaceholder.png.meta",
+      "after": "Assets/Art/Items/StonePlaceholder.png.meta",
+      "sha256": "979F319D00D8A2BA69D3E9A6CA9208FA61D16CEC79F9018F6F414B8F008A93A5",
+      "guid": "287656a09d5db9941b3c6a95fde01ba2"
+    },
+    {
+      "before": "Assets/Art/TankPlaceholder.png",
+      "after": "Assets/Art/Environment/TankPlaceholder.png",
+      "sha256": "19729D0208E1A0BB8919191A22B38AD85CE9C60BA9C45716CD4AC9997285DBA3"
+    },
+    {
+      "before": "Assets/Art/TankPlaceholder.png.meta",
+      "after": "Assets/Art/Environment/TankPlaceholder.png.meta",
+      "sha256": "AAF6B2F778A183AB6A441F4C730E99B9E8F8A316B83B9D1B5ED35F2EF00AD0FE",
+      "guid": "db6500fd57603fa4b89ec7658e77b3c8"
+    },
+    {
+      "before": "Assets/Art/TestPlaceholder.png",
+      "after": "Assets/Art/TestPlaceholder.png",
+      "sha256": "330FFD668B7190929E0AD88026637A21BD7C681FD66A6DEAE310565B01B9423D"
+    },
+    {
+      "before": "Assets/Art/TestPlaceholder.png.meta",
+      "after": "Assets/Art/TestPlaceholder.png.meta",
+      "sha256": "D56AFE5AC6CB13966CEF66D56A47BCBFD5460745C3E2E4660531E39515DD1D0E",
+      "guid": "70e8e2be46c40cd4b8e5b1e2440d3e38"
+    },
+    {
+      "before": "Assets/Art/TreePlaceholder.png",
+      "after": "Assets/Art/Environment/TreePlaceholder.png",
+      "sha256": "D807DCD46DAA3E50D1B70924FB2C551C394118C65316DE9AFDA69B84C025E6E0"
+    },
+    {
+      "before": "Assets/Art/TreePlaceholder.png.meta",
+      "after": "Assets/Art/Environment/TreePlaceholder.png.meta",
+      "sha256": "35733CFE670AB3D5D089CCC726A4EE5F4F84CA6AD07E70552B85756661465EF6",
+      "guid": "8258de9ec388b8c40ba5d31a3a22bdcb"
+    },
+    {
+      "before": "Assets/Art/Wood.png",
+      "after": "Assets/Art/Items/Wood.png",
+      "sha256": "32EDD9937BE7C498D83E5B28DA41F31292ECF47AFB86B5A1833BB16E0429D79A"
+    },
+    {
+      "before": "Assets/Art/Wood.png.meta",
+      "after": "Assets/Art/Items/Wood.png.meta",
+      "sha256": "68B0528B775BC2A48F12B31FE0F52724B4A682B6E6FB9DD7309B6F9C064FBC4E",
+      "guid": "1876f4de48239ef4ebda41a2c23cf7d0"
+    },
+    {
+      "before": "Assets/Art/Map/Ground-Grass-Placeholder.png",
+      "after": "Assets/Art/Map/Ground-Grass-Placeholder.png",
+      "sha256": "1B24D3E0FD509C9D928B224591B219B22014F8FCB18A823B4E5A14469A5D934E"
+    },
+    {
+      "before": "Assets/Art/Map/Ground-Grass-Placeholder.png.meta",
+      "after": "Assets/Art/Map/Ground-Grass-Placeholder.png.meta",
+      "sha256": "58CE2E03144E86610B3D49F6A122ED789F42E27D589ED0152B5842475D8983B3",
+      "guid": "6bcc2995dd5552a46a5b16a894049f15"
+    },
+    {
+      "before": "Assets/Art/Map/Ground-Sand-Placeholder.png",
+      "after": "Assets/Art/Map/Ground-Sand-Placeholder.png",
+      "sha256": "2856747405CBC54DBA350EADA400E3CE1BC129FB5F241E97925158F3A4EDC5A9"
+    },
+    {
+      "before": "Assets/Art/Map/Ground-Sand-Placeholder.png.meta",
+      "after": "Assets/Art/Map/Ground-Sand-Placeholder.png.meta",
+      "sha256": "08DAD292785407761EB3CAC57951B6052AE9498B5840F33DE688F54417BE601B",
+      "guid": "ba6f0cfa5ffbc434e99088465b5f7928"
+    },
+    {
+      "before": "Assets/Art/Map/Ground-Stone-Placeholder.png",
+      "after": "Assets/Art/Map/Ground-Stone-Placeholder.png",
+      "sha256": "F8FCEDF461D079868BE79EE10E8CCF97DBCED43F043AE873D0CAF691A59D13BA"
+    },
+    {
+      "before": "Assets/Art/Map/Ground-Stone-Placeholder.png.meta",
+      "after": "Assets/Art/Map/Ground-Stone-Placeholder.png.meta",
+      "sha256": "753B502793A0B0089A75145EBF1698D279F6BB8A415CA3B73C7632882FA89FD5",
+      "guid": "f242e7b1598c5cf41aa2a2b9bec1de02"
+    },
+    {
+      "before": "Assets/Art/Map/New folder.meta",
+      "after": "Assets/Art/Map/New folder.meta",
+      "sha256": "1346DE455A2E5DDF128D0E35E7C08891595DBA50740E222008A6CE3F16D1272C",
+      "guid": "b22fd8d2591917b4a82e007ce97a63b0"
+    },
+    {
+      "before": "Assets/Dialogues/Guide Intro.meta",
+      "after": "Assets/Data/Dialogues/Guide Intro.meta",
+      "sha256": "AC7E3746BD00810C99B7111D6D9385431C3A05FB954D9404368C874A39780E8C",
+      "guid": "32bd285f40823a4418c017b302cfc688"
+    },
+    {
+      "before": "Assets/Item/Coal.asset",
+      "after": "Assets/Data/Items/Coal.asset",
+      "sha256": "17FED2307EF8E8A5079F2F402DFF96F56E743E84B28ED5EFA02155C47443C472"
+    },
+    {
+      "before": "Assets/Item/Coal.asset.meta",
+      "after": "Assets/Data/Items/Coal.asset.meta",
+      "sha256": "2FDC5AA43947CABF9C52E3E94C6450FBB05DF539E63C77295AEC7DD35624D9BF",
+      "guid": "161353ecad58e9145be1ce5b91fe9a6c"
+    },
+    {
+      "before": "Assets/Item/Dirt.asset",
+      "after": "Assets/Data/Items/Dirt.asset",
+      "sha256": "42DB3685C97180EC1676F34C7938756B556406FFE837D3457C54FA0E4FE0F7B7"
+    },
+    {
+      "before": "Assets/Item/Dirt.asset.meta",
+      "after": "Assets/Data/Items/Dirt.asset.meta",
+      "sha256": "90CE6D2313B23DE1C8BB2DF71835CCB80C5E94F142E134E7690DEA2CC8CDDA4F",
+      "guid": "ea29c6f6bd967aa42a725ae47433cb6f"
+    },
+    {
+      "before": "Assets/Item/FoodItem.meta",
+      "after": "Assets/Data/Items/Food.meta",
+      "sha256": "4E2ADF5E3658D7C45B1757EDFACFAA9100938FBD00B5411C436837D11F06D9CA",
+      "guid": "0dc78cf44d713a44bbe3cc88977e1733"
+    },
+    {
+      "before": "Assets/Item/Glass.asset",
+      "after": "Assets/Data/Items/Glass.asset",
+      "sha256": "DF3139AAAF8C34981E996D8E79868F3951054B1BE4D90F530C0BCB410A318E70"
+    },
+    {
+      "before": "Assets/Item/Glass.asset.meta",
+      "after": "Assets/Data/Items/Glass.asset.meta",
+      "sha256": "A730A26F05EAF36BB8D213A3A2C64B0F59614D35676C1DB1EAB22B320429A7FB",
+      "guid": "046a21f271d77a74cb606de3761d9b58"
+    },
+    {
+      "before": "Assets/Item/IronBar.asset",
+      "after": "Assets/Data/Items/IronBar.asset",
+      "sha256": "E74761E440E275B244242F21F356E3D32A2A09C56ED90DA0A381027182F0B2C2"
+    },
+    {
+      "before": "Assets/Item/IronBar.asset.meta",
+      "after": "Assets/Data/Items/IronBar.asset.meta",
+      "sha256": "F8149F4893F68468A146CDCC70BCE77CCE987D3520A3E48BFE9AB1270C408EB2",
+      "guid": "9e99658546eab684c8079cadf2aa9b04"
+    },
+    {
+      "before": "Assets/Item/RawIron.asset",
+      "after": "Assets/Data/Items/RawIron.asset",
+      "sha256": "57A0022F951D54ED84C58A9706828A50598C699FD30DE5E406645F73AAB25336"
+    },
+    {
+      "before": "Assets/Item/RawIron.asset.meta",
+      "after": "Assets/Data/Items/RawIron.asset.meta",
+      "sha256": "0E4EEDE753DD0239CCE9D6204B8B3F22415340BBBB66C7CA6CEC93A210AAC296",
+      "guid": "58c36a8bd8fe0d048808d28626337cbf"
+    },
+    {
+      "before": "Assets/Item/Sand.asset",
+      "after": "Assets/Data/Items/Sand.asset",
+      "sha256": "21AA990168E6A38EB5B603502666EE11D5B90E107F8563523F65A5A2486030B4"
+    },
+    {
+      "before": "Assets/Item/Sand.asset.meta",
+      "after": "Assets/Data/Items/Sand.asset.meta",
+      "sha256": "152487B6FA88BBC751388D1513E5E3AB914471E5B5C549A934424EB6AD65AA09",
+      "guid": "2b93e46b5c650f543930551e10eae635"
+    },
+    {
+      "before": "Assets/Item/Stone.asset",
+      "after": "Assets/Data/Items/Stone.asset",
+      "sha256": "DA66F65A4FF5F5825F66446BE5D3C2AB669527C4EA520523719F75A151243A7C"
+    },
+    {
+      "before": "Assets/Item/Stone.asset.meta",
+      "after": "Assets/Data/Items/Stone.asset.meta",
+      "sha256": "E926720E9EA04358675D98BFC884D708DC728CF9C1F49D5E1D7653DEE61A174B",
+      "guid": "720126e1a5ff2b244a55cf21fa0729be"
+    },
+    {
+      "before": "Assets/Item/Tools.meta",
+      "after": "Assets/Data/Items/Tools.meta",
+      "sha256": "40A16D937A013AF55BBB3EE0C8EBD177FF9EFC158DBB7A22D38743970FBB7157",
+      "guid": "d6c07c48a412d2942933190ae5012b91"
+    },
+    {
+      "before": "Assets/Item/Wood.asset",
+      "after": "Assets/Data/Items/Wood.asset",
+      "sha256": "2F7C4F8CCA1ABC7AA2ADEEAAC3CF8ED272AFB866EE9A2496D6A268A092CB48C1"
+    },
+    {
+      "before": "Assets/Item/Wood.asset.meta",
+      "after": "Assets/Data/Items/Wood.asset.meta",
+      "sha256": "3DE93F7D0F099418B76DCD155A40EDA1E056A542A61A6E84DCBE57CE85523548",
+      "guid": "1bd06ca6e3961244eb87669f286290f6"
+    },
+    {
+      "before": "Assets/Item/FoodItem/FishFood.asset",
+      "after": "Assets/Data/Items/Food/FishFood.asset",
+      "sha256": "F6F015E8463DA8D8A2874D7F680BE519A167D3E0F32FA664012C4CA71561C807"
+    },
+    {
+      "before": "Assets/Item/FoodItem/FishFood.asset.meta",
+      "after": "Assets/Data/Items/Food/FishFood.asset.meta",
+      "sha256": "BF76AAA40FF39A0F96255B78A285BF268784EF66E1414B459C66AD73FBBA0F92",
+      "guid": "3b26d35ad30c3c34086da32fa7e534cb"
+    },
+    {
+      "before": "Assets/Item/Tools/Axe.asset",
+      "after": "Assets/Data/Items/Tools/Axe.asset",
+      "sha256": "48385C28814C163795A518F5BA20CC410F1EE0C0C2A0A3EB188F73E7828431E9"
+    },
+    {
+      "before": "Assets/Item/Tools/Axe.asset.meta",
+      "after": "Assets/Data/Items/Tools/Axe.asset.meta",
+      "sha256": "CCFBBDC20AF0F933E45B00D486FE158DD806B8328D593FA567BB7AD562CFFD36",
+      "guid": "b627d547ee054bd4ea757025ccc5fde4"
+    },
+    {
+      "before": "Assets/Item/Tools/Net.asset",
+      "after": "Assets/Data/Items/Tools/Net.asset",
+      "sha256": "52C2587B71A59986C4441849D37CB02D52EDD9AC6F04236A15986985D58068BB"
+    },
+    {
+      "before": "Assets/Item/Tools/Net.asset.meta",
+      "after": "Assets/Data/Items/Tools/Net.asset.meta",
+      "sha256": "FFA4C007F91F497E63C6DFC7E80531ADC71FDED3E9A616AED52E2F655895BA99",
+      "guid": "4a6bd82d90cb2e4419827777572574e3"
+    },
+    {
+      "before": "Assets/Item/Tools/Pickaxe.asset",
+      "after": "Assets/Data/Items/Tools/Pickaxe.asset",
+      "sha256": "F31EB13CB60CBC2A8B425C431FD2CE1118DE270047A7D188C8116DAF8B4CDD58"
+    },
+    {
+      "before": "Assets/Item/Tools/Pickaxe.asset.meta",
+      "after": "Assets/Data/Items/Tools/Pickaxe.asset.meta",
+      "sha256": "99BD95E8283AA8A20E999110BA122FC63E376E8072AAF7EF1429133AB504A958",
+      "guid": "78685f0842bf7c240a3cc7662b989d7b"
+    },
+    {
+      "before": "Assets/Item/Tools/Shovel.asset",
+      "after": "Assets/Data/Items/Tools/Shovel.asset",
+      "sha256": "51FDAF1634A43AB5673A44285B7FC73D3078601D634F2AF3572C5F34C28CE9FF"
+    },
+    {
+      "before": "Assets/Item/Tools/Shovel.asset.meta",
+      "after": "Assets/Data/Items/Tools/Shovel.asset.meta",
+      "sha256": "E4D2C22BDAB8E50D6A4B68D1F87758A33E38FD47C441F6F318DB591F45165A55",
+      "guid": "f24dfe69dbe0ade4480f65d58a5b7daf"
+    },
+    {
+      "before": "Assets/Prefabs/CoalNode Variant.prefab",
+      "after": "Assets/Prefabs/Resources/CoalNode Variant.prefab",
+      "sha256": "7E512D359D89A0D6C185F5261DA99415506BA7AC42AD4EE589B0415D97A67ABC"
+    },
+    {
+      "before": "Assets/Prefabs/CoalNode Variant.prefab.meta",
+      "after": "Assets/Prefabs/Resources/CoalNode Variant.prefab.meta",
+      "sha256": "F62A9422E20138ECEB0ED00C66A69AF796FCCD1961DBBBFED72111539A672D09",
+      "guid": "6801064e93a4e22449317e7351bb58be"
+    },
+    {
+      "before": "Assets/Prefabs/DialogueResponseButton.prefab",
+      "after": "Assets/Prefabs/UI/DialogueResponseButton.prefab",
+      "sha256": "AE3AC171016A9532256F6C972BF89886DD847AF7229D295C35B642F8ADEFB0DD"
+    },
+    {
+      "before": "Assets/Prefabs/DialogueResponseButton.prefab.meta",
+      "after": "Assets/Prefabs/UI/DialogueResponseButton.prefab.meta",
+      "sha256": "B95AF7898F5786FDAE4AAD72A25E016CFD9B2F2E49E622460D2D8E7FE66A03D2",
+      "guid": "f17f36558f2621b46acf1afed74da22c"
+    },
+    {
+      "before": "Assets/Prefabs/DirtClump.prefab",
+      "after": "Assets/Prefabs/Resources/DirtClump.prefab",
+      "sha256": "87C9022D5023892B89F9901D38FF255803EE6ED907676DFFC3D3182AB8D6360B"
+    },
+    {
+      "before": "Assets/Prefabs/DirtClump.prefab.meta",
+      "after": "Assets/Prefabs/Resources/DirtClump.prefab.meta",
+      "sha256": "FD977E815A0799853706B7BB3231A9855A69D33C7A02875C947E1A22A5BA09EB",
+      "guid": "f5bf53c4e272d81419c45413e61d345d"
+    },
+    {
+      "before": "Assets/Prefabs/IronNode Variant.prefab",
+      "after": "Assets/Prefabs/Resources/IronNode Variant.prefab",
+      "sha256": "077CB5D5299D96D5D6A294B28BE28A192F4ABFC717E8B32AD0F70EAA63C490D3"
+    },
+    {
+      "before": "Assets/Prefabs/IronNode Variant.prefab.meta",
+      "after": "Assets/Prefabs/Resources/IronNode Variant.prefab.meta",
+      "sha256": "FBC8D1748E8DE0F5A2C1821A3B75AA5391A09C5A2B05004D30576BF52B46FE42",
+      "guid": "d4c2d387524972046b715a6344376daa"
+    },
+    {
+      "before": "Assets/Prefabs/RockNode.prefab",
+      "after": "Assets/Prefabs/Resources/RockNode.prefab",
+      "sha256": "30EAFAF559B45D328DCE8BE847A66ED1A90CC37E301D8EC8880B1655E067A869"
+    },
+    {
+      "before": "Assets/Prefabs/RockNode.prefab.meta",
+      "after": "Assets/Prefabs/Resources/RockNode.prefab.meta",
+      "sha256": "431D62517AEC5E904841FC273FB3BE89FDBE0DF099EABB78CFBF3206EDF97621",
+      "guid": "f3040d9d7368bcd4688603850ecfd811"
+    },
+    {
+      "before": "Assets/Prefabs/SandClump.prefab",
+      "after": "Assets/Prefabs/Resources/SandClump.prefab",
+      "sha256": "B83D10A8A4F6EC5F932BA79F819219B0E2E2259AB8AE5C6D87705D4F150CC5F2"
+    },
+    {
+      "before": "Assets/Prefabs/SandClump.prefab.meta",
+      "after": "Assets/Prefabs/Resources/SandClump.prefab.meta",
+      "sha256": "66FB8DFBE98C57A9A162457F86CCE908AB1658FC00F56E9CA3C2F8E697CC3E23",
+      "guid": "b0dc8d3cb13978c4dbdc218089160fd0"
+    },
+    {
+      "before": "Assets/Prefabs/Tree.prefab",
+      "after": "Assets/Prefabs/Resources/Tree.prefab",
+      "sha256": "84FD042C3452440BDD3D0E02C2DDB33B5DE2A1DBF537BF4AF827C368D753D784"
+    },
+    {
+      "before": "Assets/Prefabs/Tree.prefab.meta",
+      "after": "Assets/Prefabs/Resources/Tree.prefab.meta",
+      "sha256": "DA644044483D324B83978C1DECA2D1E2AB5FC27A1BCC5BA6B7F704B15FFC46DB",
+      "guid": "3478c3e0f4265b647884c5a7f4633da9"
+    },
+    {
+      "before": "Assets/Prefabs/WorldItemDrop.prefab",
+      "after": "Assets/Prefabs/Items/WorldItemDrop.prefab",
+      "sha256": "05E4D6A3226D8D58A9CB012CE4CA7B9CD39E791A326365C27CE3CEC1985D5036"
+    },
+    {
+      "before": "Assets/Prefabs/WorldItemDrop.prefab.meta",
+      "after": "Assets/Prefabs/Items/WorldItemDrop.prefab.meta",
+      "sha256": "182A07778AE0F7E53378EC160EEB6AC409C808C6E428AC91AEDC36685C9E5820",
+      "guid": "9a5176ae7ebe58748a6a9b202aabf1d0"
+    },
+    {
+      "before": "Assets/Recipes/GlassRecipe.asset",
+      "after": "Assets/Data/Recipes/GlassRecipe.asset",
+      "sha256": "C4104D14C2C9B973946FD87752D720FFB413EDE290D10FC1E154A70BC177F6D2"
+    },
+    {
+      "before": "Assets/Recipes/GlassRecipe.asset.meta",
+      "after": "Assets/Data/Recipes/GlassRecipe.asset.meta",
+      "sha256": "A44E8434FA263C1992AB1BE3B941AB677ADF2AE215C7E22C1113FBD976FB34B3",
+      "guid": "3ce3b10ecf2abb94d880a9f2c54ded89"
+    },
+    {
+      "before": "Assets/Recipes/IronRecipe.asset",
+      "after": "Assets/Data/Recipes/IronRecipe.asset",
+      "sha256": "B42516B4F47ED361E7E1A73164D3C4B1C1F3067DFF5AEC9928CDC29485F663A6"
+    },
+    {
+      "before": "Assets/Recipes/IronRecipe.asset.meta",
+      "after": "Assets/Data/Recipes/IronRecipe.asset.meta",
+      "sha256": "761086999B2D45A0F4E4539D7A22EADEA13CA1EA0B62D88CE1BD7AD9CF9A2621",
+      "guid": "574bbb5be0fedc04aa7551a33bdceda5"
+    },
+    {
+      "before": "Assets/Scenes/SampleScene.unity",
+      "after": "Assets/Scenes/SampleScene.unity",
+      "sha256": "B664BCA1D026ED73EF2FFD07B6172CCD5DD38943CDB1EFF43CD4FFA78CB394B7"
+    },
+    {
+      "before": "Assets/Scenes/SampleScene.unity.meta",
+      "after": "Assets/Scenes/SampleScene.unity.meta",
+      "sha256": "204F446BC13539151C15AF875550A7FA6F791662E967572A1B4B06FD0005DAD1",
+      "guid": "8c9cfa26abfee488c85f1582747f6a02"
+    },
+    {
+      "before": "Assets/Scripts/Animals.meta",
+      "after": "Assets/Scripts/Animals.meta",
+      "sha256": "6C4B426DE5DF24D862B8260BCE0C97EE0A4077A49A0ED1842BA6C1F7BB9F37F6",
+      "guid": "dd96ffa0dd7d34a488d85c98e00b9904"
+    },
+    {
+      "before": "Assets/Scripts/Crafting.meta",
+      "after": "Assets/Scripts/Crafting.meta",
+      "sha256": "989BEC518739227DB97C4CAA46B64CA8E09D9B343A9C7FCD0888FF7012B43C13",
+      "guid": "4e749933174077446a2980b4ed24c865"
+    },
+    {
+      "before": "Assets/Scripts/Debug.meta",
+      "after": "Assets/Scripts/Debug.meta",
+      "sha256": "60DB4AA4463C63010699A2FF188DD7C75644CE0F83A6C4A2DE2FBB27B0AD9CB3",
+      "guid": "5f6c5993d74edb148b8d3e575bd1b310"
+    },
+    {
+      "before": "Assets/Scripts/Dialogue.meta",
+      "after": "Assets/Scripts/Dialogue.meta",
+      "sha256": "444711434B125E6102192028393E392A1D0C53EA3E1FEA9B9DC536370A14463C",
+      "guid": "c459da77b85d9b14c92d72a6650d8ef5"
+    },
+    {
+      "before": "Assets/Scripts/Enclosures.meta",
+      "after": "Assets/Scripts/Enclosures.meta",
+      "sha256": "42AF3B8D19E649FD566828F6C3D18E85D534F1E09042FEE2A99248E48472A395",
+      "guid": "bdaa37d8d505c12438b1e708b2eb0483"
+    },
+    {
+      "before": "Assets/Scripts/EnclosureUI.cs",
+      "after": "Assets/Scripts/Enclosures/EnclosureUI.cs",
+      "sha256": "AF8FD8D640488ADEEB1886EBA0B79BFDBCB09D6DEE006DC89BDB9581D51D0C27"
+    },
+    {
+      "before": "Assets/Scripts/EnclosureUI.cs.meta",
+      "after": "Assets/Scripts/Enclosures/EnclosureUI.cs.meta",
+      "sha256": "670C04E7BFBC1CA63D896853DDB99E27CDF5C21CA5A3E09E6DB160EE621388BC",
+      "guid": "6f6a0ee4b4e01b1458db838fb000d04b"
+    },
+    {
+      "before": "Assets/Scripts/Inventory.meta",
+      "after": "Assets/Scripts/Inventory.meta",
+      "sha256": "4006DF38EEF698FFC18016DD1CFA4047A87A724DD309CC1D1741070B1CC0D77A",
+      "guid": "e485597dd0ad73047b37acbeb665d4b4"
+    },
+    {
+      "before": "Assets/Scripts/Items.meta",
+      "after": "Assets/Scripts/Items.meta",
+      "sha256": "7C24F7D7CAADF7F9A6CC8ADB75495C84DE1907B430298E42C577072952A3DD11",
+      "guid": "af0e8fc7dec1d544eac16a20d4756210"
+    },
+    {
+      "before": "Assets/Scripts/Player.meta",
+      "after": "Assets/Scripts/Player.meta",
+      "sha256": "D2933A695F829F4A71FADD4B5EC85E0F6A0AA83D9B491D5ABBFA191689FE6D37",
+      "guid": "5a6a02b5ccc114e4b8910535d942c019"
+    },
+    {
+      "before": "Assets/Scripts/Resources.meta",
+      "after": "Assets/Scripts/Resources.meta",
+      "sha256": "936BFD0FCB229F2FD54A66DDDB63433654878A9D38C47EB12F41441E1837E45A",
+      "guid": "f89b6f63fcfe0db478e70ff3a483c510"
+    },
+    {
+      "before": "Assets/Scripts/UI.meta",
+      "after": "Assets/Scripts/Animals/UI.meta",
+      "sha256": "EEB9F777847014DA2C447DB92503B6DA5A1E16EE357A75A44F606239DFD2D951",
+      "guid": "da409fd81ed376d478db6089ec2be182"
+    },
+    {
+      "before": "Assets/Scripts/World.meta",
+      "after": "Assets/Scripts/World.meta",
+      "sha256": "EDA13C90A044840E4DCDEC0CBF2471B16ACE27CC86B8E75D56EA877594E6211F",
+      "guid": "11f1c8205a545ef47b6bfb71347188a3"
+    },
+    {
+      "before": "Assets/Scripts/WorldItemDrop.cs",
+      "after": "Assets/Scripts/Items/WorldItemDrop.cs",
+      "sha256": "988E4EE6FD266CACEFA2EF0B164496C91C5CCC0031C8113E17DFF2B82A3B2841"
+    },
+    {
+      "before": "Assets/Scripts/WorldItemDrop.cs.meta",
+      "after": "Assets/Scripts/Items/WorldItemDrop.cs.meta",
+      "sha256": "EC1DE4A25C6F0B6A9D994D0A49D43C87DBC9837B28DDE4FCC6EDE603BF06ED7C",
+      "guid": "71b4d8f2f3c99d54b802eb63b05c66f5"
+    },
+    {
+      "before": "Assets/Scripts/Animals/Animal.cs",
+      "after": "Assets/Scripts/Animals/Animal.cs",
+      "sha256": "A4F44104761DD69B0D3E96A1E9ECD0F2DB2926392EB4D2E5DD87BFCC46E2B1AD"
+    },
+    {
+      "before": "Assets/Scripts/Animals/Animal.cs.meta",
+      "after": "Assets/Scripts/Animals/Animal.cs.meta",
+      "sha256": "008335A3B964607AFBDE11B553B6DE503D7B01AD2A9711725594F8451B06BB9F",
+      "guid": "8f313ebd49d55a140b5a7ef397b9a82c"
+    },
+    {
+      "before": "Assets/Scripts/Animals/AnimalData.cs",
+      "after": "Assets/Scripts/Animals/AnimalData.cs",
+      "sha256": "B2493E3F153257A872F6B522F9E2B69B3B8A8C3277D9CC423577A3222AF38E13"
+    },
+    {
+      "before": "Assets/Scripts/Animals/AnimalData.cs.meta",
+      "after": "Assets/Scripts/Animals/AnimalData.cs.meta",
+      "sha256": "3FF93B4588DF25EF1F48701D9535D4C38B0AF57021B382AFFE201EC0391472B8",
+      "guid": "e69ea4fa3e0b80f41a8b6ef35a3a9e5b"
+    },
+    {
+      "before": "Assets/Scripts/Animals/AnimalInstance.cs",
+      "after": "Assets/Scripts/Animals/AnimalInstance.cs",
+      "sha256": "FC6F730A7582734CA86676DBD2F6A16C20CB5701EDF7341C0E1BC9E2797B95AD"
+    },
+    {
+      "before": "Assets/Scripts/Animals/AnimalInstance.cs.meta",
+      "after": "Assets/Scripts/Animals/AnimalInstance.cs.meta",
+      "sha256": "30CC9988800B9DDF131AA5D8F50C17CD283C0C21F00A85EBADF1C6DF494369B4",
+      "guid": "c84d95ace281a7f4ca6e423ad4eadcd5"
+    },
+    {
+      "before": "Assets/Scripts/Animals/AnimalSex.cs",
+      "after": "Assets/Scripts/Animals/AnimalSex.cs",
+      "sha256": "D1998EDC37365F5B0CF3181DB95934F42ABE141DC559078CFC8DFF1BE72185BA"
+    },
+    {
+      "before": "Assets/Scripts/Animals/AnimalSex.cs.meta",
+      "after": "Assets/Scripts/Animals/AnimalSex.cs.meta",
+      "sha256": "03BA93511883BDE594936764EA290D33D863AC15D8EAAF6204CAF36346EF930C",
+      "guid": "a56ace6af14b17b469ca5bc2a617c1c7"
+    },
+    {
+      "before": "Assets/Scripts/Animals/CatachableAnimal.cs",
+      "after": "Assets/Scripts/Animals/CatachableAnimal.cs",
+      "sha256": "635B46897C23692AA0DE268DE36E6411187727A3650498BE91F0635C37940E6E"
+    },
+    {
+      "before": "Assets/Scripts/Animals/CatachableAnimal.cs.meta",
+      "after": "Assets/Scripts/Animals/CatachableAnimal.cs.meta",
+      "sha256": "0FA3587550C7ED94F13DFE3EFB05ED12EFCAA8F67494A02A4A7B6B99D00F6252",
+      "guid": "f5348032b9f969e44ae8b033f6797b5e"
+    },
+    {
+      "before": "Assets/Scripts/Animals/SpeciesData.cs",
+      "after": "Assets/Scripts/Animals/SpeciesData.cs",
+      "sha256": "5E8D3A84969A1C6658599C81E2C4163AC18EDC8F0C98E52C5F08358042B8D655"
+    },
+    {
+      "before": "Assets/Scripts/Animals/SpeciesData.cs.meta",
+      "after": "Assets/Scripts/Animals/SpeciesData.cs.meta",
+      "sha256": "915963AC81C6FDE6C9F633377410F65FD11BD67E1EF9BFEE96F4A5A335314967",
+      "guid": "26efb85a242254a428bad8652d6de080"
+    },
+    {
+      "before": "Assets/Scripts/Crafting/CraftingIngredient.cs",
+      "after": "Assets/Scripts/Crafting/CraftingIngredient.cs",
+      "sha256": "2CFA8EA423D5911F447F7E5B71964CA1356162DB37F1385A38B8C030BAB27DA1"
+    },
+    {
+      "before": "Assets/Scripts/Crafting/CraftingIngredient.cs.meta",
+      "after": "Assets/Scripts/Crafting/CraftingIngredient.cs.meta",
+      "sha256": "51D195FA9F1589D5EAE3D143606962FCDAF6A11EF71DDEFC70BA1F95B3C3947B",
+      "guid": "e792b7bc6f627c2469ce33637988c38a"
+    },
+    {
+      "before": "Assets/Scripts/Crafting/CraftingRecipe.cs",
+      "after": "Assets/Scripts/Crafting/CraftingRecipe.cs",
+      "sha256": "2F5990F1DC8DF19063A8646ED2B3DDFC13C719EA3944A18DF26C086B21A17BA4"
+    },
+    {
+      "before": "Assets/Scripts/Crafting/CraftingRecipe.cs.meta",
+      "after": "Assets/Scripts/Crafting/CraftingRecipe.cs.meta",
+      "sha256": "8EBC16B13807DEABA31FABF1FA010841ECE818A995C3E47C91B03B7A88864159",
+      "guid": "438c6452879b88041b3ab8f27ed28d7a"
+    },
+    {
+      "before": "Assets/Scripts/Crafting/CraftingSystem.cs",
+      "after": "Assets/Scripts/Crafting/CraftingSystem.cs",
+      "sha256": "42876831E98B57AAF6A95FC5759E39FAB37A222A75DE746D64DB78E287814D24"
+    },
+    {
+      "before": "Assets/Scripts/Crafting/CraftingSystem.cs.meta",
+      "after": "Assets/Scripts/Crafting/CraftingSystem.cs.meta",
+      "sha256": "1825F0A8173F66DACCA8CA3B17827DDDE8C5E5444AD85788E93380E75F650968",
+      "guid": "f3dd5979d6dc8c247822f676f6072b49"
+    },
+    {
+      "before": "Assets/Scripts/Debug/DebugTreeSpawner.cs",
+      "after": "Assets/Scripts/Debug/DebugTreeSpawner.cs",
+      "sha256": "53F594E6080A3494B73924B3D08827744AF49CCADCEC8FC829273C5621403D55"
+    },
+    {
+      "before": "Assets/Scripts/Debug/DebugTreeSpawner.cs.meta",
+      "after": "Assets/Scripts/Debug/DebugTreeSpawner.cs.meta",
+      "sha256": "30CFD4EAA43FDAEACD91E6E04A4B4530A2309A7F3CDF1AF983FF63E0EB964969",
+      "guid": "384c09dee8f35dd4e9255c40e19d55fa"
+    },
+    {
+      "before": "Assets/Scripts/Dialogue/DialogueManager.cs",
+      "after": "Assets/Scripts/Dialogue/DialogueManager.cs",
+      "sha256": "A4FC2C123DC9E5A68C6E95CB64C9EDEFBDF2D8194D940E1A2E5DC1D4C53B89FF"
+    },
+    {
+      "before": "Assets/Scripts/Dialogue/DialogueManager.cs.meta",
+      "after": "Assets/Scripts/Dialogue/DialogueManager.cs.meta",
+      "sha256": "FA6F4354722FE4315C5A301F2B9853BEF5F4A246F92D153BED79A4015758E593",
+      "guid": "b4c161cc7d2d5444ab9ac0dafd960338"
+    },
+    {
+      "before": "Assets/Scripts/Dialogue/DialogueNode.cs",
+      "after": "Assets/Scripts/Dialogue/DialogueNode.cs",
+      "sha256": "72FA32CC6D5C892BDBE2A362F493A1CCE6C04BF35EB10D58C7A54A5A7427EEDE"
+    },
+    {
+      "before": "Assets/Scripts/Dialogue/DialogueNode.cs.meta",
+      "after": "Assets/Scripts/Dialogue/DialogueNode.cs.meta",
+      "sha256": "AE141DE412301D19806C10157F8F56BFB926D5D1FD727A81E8E34AE86166176B",
+      "guid": "e4b83f7343bba304f8a910338ab388c1"
+    },
+    {
+      "before": "Assets/Scripts/Dialogue/DialogueResponse.cs",
+      "after": "Assets/Scripts/Dialogue/DialogueResponse.cs",
+      "sha256": "CE6300BE38B58F9B6580F87116E33394AB1247414DCB0D6B45714B8EF4DA4797"
+    },
+    {
+      "before": "Assets/Scripts/Dialogue/DialogueResponse.cs.meta",
+      "after": "Assets/Scripts/Dialogue/DialogueResponse.cs.meta",
+      "sha256": "1B29D759C45F2C70B4EBE48ED0EB3524DCB826ECBCC87A902D9C8B5B1BB0CAE7",
+      "guid": "b9e7f0d8c6c96134ca2aabebc64a82e6"
+    },
+    {
+      "before": "Assets/Scripts/Dialogue/NPC.cs",
+      "after": "Assets/Scripts/Dialogue/NPC.cs",
+      "sha256": "0296AF8474273ED48F20BB25722189F4F1F816A3CD46A4E88B3B228FBF6EDECB"
+    },
+    {
+      "before": "Assets/Scripts/Dialogue/NPC.cs.meta",
+      "after": "Assets/Scripts/Dialogue/NPC.cs.meta",
+      "sha256": "521A45FF66B858525C61ECCBC5255215A178A33AEB8287BA76A6AF12366F13D0",
+      "guid": "2854392027c5f21439a8347a6399846f"
+    },
+    {
+      "before": "Assets/Scripts/Enclosures/AnimalEnclosure.cs",
+      "after": "Assets/Scripts/Enclosures/AnimalEnclosure.cs",
+      "sha256": "C29D2A242709B8AB39749D414648CB3484547ADEDD0158D55E2FFE0B781E967E"
+    },
+    {
+      "before": "Assets/Scripts/Enclosures/AnimalEnclosure.cs.meta",
+      "after": "Assets/Scripts/Enclosures/AnimalEnclosure.cs.meta",
+      "sha256": "9AFBFB2CA915E4C98696775FA66E631E45697E878CD663B7CC2A0609767145BE",
+      "guid": "d4c3a3c0329e59d4689b8d95beca39a0"
+    },
+    {
+      "before": "Assets/Scripts/Inventory/AnimalInventory.cs",
+      "after": "Assets/Scripts/Inventory/AnimalInventory.cs",
+      "sha256": "61603F8A69D8C222B1BBB90D29A2A09606DB55B549CC862C49BECBB19011A6A3"
+    },
+    {
+      "before": "Assets/Scripts/Inventory/AnimalInventory.cs.meta",
+      "after": "Assets/Scripts/Inventory/AnimalInventory.cs.meta",
+      "sha256": "65B5D9EF0C94210407D36DEB8867CB0658D8D84A75CEA0119A567E286377056E",
+      "guid": "daf6b11d2544caf43b03e6f406c1297a"
+    },
+    {
+      "before": "Assets/Scripts/Inventory/Hotbar.cs",
+      "after": "Assets/Scripts/Inventory/Hotbar.cs",
+      "sha256": "E0AF507431434169910544322284D1B9DF32A9365F3EBBE7218D33ED36656E8F"
+    },
+    {
+      "before": "Assets/Scripts/Inventory/Hotbar.cs.meta",
+      "after": "Assets/Scripts/Inventory/Hotbar.cs.meta",
+      "sha256": "826D5DB47EEA2B294A53EDCC096E3274C4C9465A44FB1E101058557DA5E2066A",
+      "guid": "4a7bd2cf5a761ce4999c8e971acb5ca5"
+    },
+    {
+      "before": "Assets/Scripts/Inventory/HotbarUI.cs",
+      "after": "Assets/Scripts/Inventory/HotbarUI.cs",
+      "sha256": "EB90486E950FDEF6918E1F185501306A8A9F4E4E83F6ADA2AE51C740ED692472"
+    },
+    {
+      "before": "Assets/Scripts/Inventory/HotbarUI.cs.meta",
+      "after": "Assets/Scripts/Inventory/HotbarUI.cs.meta",
+      "sha256": "67B09E5959EAAF6EB48680F9C4AF2772CED46E864C3695DAE2156744E051A8FE",
+      "guid": "00fa61f16c9286946b08cf15b6be19a3"
+    },
+    {
+      "before": "Assets/Scripts/Inventory/InventorySlot.cs",
+      "after": "Assets/Scripts/Inventory/InventorySlot.cs",
+      "sha256": "9A4F011C1DD9A1FA0904991931684A3F0DD3230FD479DD5ABC680659C78CC2E0"
+    },
+    {
+      "before": "Assets/Scripts/Inventory/InventorySlot.cs.meta",
+      "after": "Assets/Scripts/Inventory/InventorySlot.cs.meta",
+      "sha256": "2D1613B3CCD2508C31C7C0F8A22E6AAF4DC03F41FA095E5D875D5DEC4A8B33B1",
+      "guid": "67b00a6187fd60d42b853331073a0f6c"
+    },
+    {
+      "before": "Assets/Scripts/Inventory/InventorySlotUI.cs",
+      "after": "Assets/Scripts/Inventory/InventorySlotUI.cs",
+      "sha256": "B77CAF52A517D8CC24921F7BB72895C2287897A3CDD3ED1E484F0DFA351C116F"
+    },
+    {
+      "before": "Assets/Scripts/Inventory/InventorySlotUI.cs.meta",
+      "after": "Assets/Scripts/Inventory/InventorySlotUI.cs.meta",
+      "sha256": "81BC4DC8BA95472BEA6425E93BB3384245FE14F361C5443D1540EAD612B8DCDC",
+      "guid": "3d221ff0e53fa6942904e117203c53b0"
+    },
+    {
+      "before": "Assets/Scripts/Inventory/InventoryUI.cs",
+      "after": "Assets/Scripts/Inventory/InventoryUI.cs",
+      "sha256": "AA24D8BB95E80DCBA82A850ABB530A1284671EBBDF2E23ED0E98382678753B52"
+    },
+    {
+      "before": "Assets/Scripts/Inventory/InventoryUI.cs.meta",
+      "after": "Assets/Scripts/Inventory/InventoryUI.cs.meta",
+      "sha256": "024E47E131323236C7B80581B393272DC59DA828B8029EB95ADE4B55E86AC3A1",
+      "guid": "b1e99be907b127749afa96a3930b23a3"
+    },
+    {
+      "before": "Assets/Scripts/Inventory/PlayerInventory.cs",
+      "after": "Assets/Scripts/Inventory/PlayerInventory.cs",
+      "sha256": "626F375FB4FE224A3E1074DA5E7ACCB4F96469C4921989EE614A29C13793CE44"
+    },
+    {
+      "before": "Assets/Scripts/Inventory/PlayerInventory.cs.meta",
+      "after": "Assets/Scripts/Inventory/PlayerInventory.cs.meta",
+      "sha256": "C3AE0BE6CEE21E46E581953E3FD831F37163A89A23D0B686BC0EAB652E28DF11",
+      "guid": "8984d8276c84ed7459e17fd2f808bd0f"
+    },
+    {
+      "before": "Assets/Scripts/Items/FoodItem.cs",
+      "after": "Assets/Scripts/Items/FoodItem.cs",
+      "sha256": "F3D7BAA4F02013566F0B6F573D7C568D5C6AF026DA698AF11BB13ED4D0A7B878"
+    },
+    {
+      "before": "Assets/Scripts/Items/FoodItem.cs.meta",
+      "after": "Assets/Scripts/Items/FoodItem.cs.meta",
+      "sha256": "31EAA4F39DF1FDE5F022A7377017F9AFF91942163900ACB1F65D3272665C55CF",
+      "guid": "ce1339c6fe749344b90fdf4a1c5672c9"
+    },
+    {
+      "before": "Assets/Scripts/Items/ItemData.cs",
+      "after": "Assets/Scripts/Items/ItemData.cs",
+      "sha256": "4261848DC24A16365A3DE7BE5FCCA617DE2860A1808D01198258A3B6F14C27EB"
+    },
+    {
+      "before": "Assets/Scripts/Items/ItemData.cs.meta",
+      "after": "Assets/Scripts/Items/ItemData.cs.meta",
+      "sha256": "E0B212BA6A9982C3500CE55541117BBE6F68D41D0764942698D86ACECDDF98A5",
+      "guid": "8c5b5f1202c52504e9867d58d9f4e284"
+    },
+    {
+      "before": "Assets/Scripts/Items/ToolItem.cs",
+      "after": "Assets/Scripts/Items/ToolItem.cs",
+      "sha256": "D827DE4D3856B20634C95FCFB53ED19D800374F62DE9C5ED0536A183FDF58DEC"
+    },
+    {
+      "before": "Assets/Scripts/Items/ToolItem.cs.meta",
+      "after": "Assets/Scripts/Items/ToolItem.cs.meta",
+      "sha256": "2428652442D01481D3974EF198122C2E8B48405DC20867382FD0F7EC09111FFC",
+      "guid": "452dedbfe1b2e9d4290e446ec4d9cda3"
+    },
+    {
+      "before": "Assets/Scripts/Items/ToolType.cs",
+      "after": "Assets/Scripts/Items/ToolType.cs",
+      "sha256": "9C45264B2203D7BDDEC40F76623F115AA36CA1C8E0774B9EC6E43A8988C4529E"
+    },
+    {
+      "before": "Assets/Scripts/Items/ToolType.cs.meta",
+      "after": "Assets/Scripts/Items/ToolType.cs.meta",
+      "sha256": "4C94F50DA32EE17FC205A08A074BB223EC001522D0E4CE99D0902B9E61CF4176",
+      "guid": "623ec25a8499ef8499a7c7542f392bd9"
+    },
+    {
+      "before": "Assets/Scripts/Player/CameraFollow.cs",
+      "after": "Assets/Scripts/Player/CameraFollow.cs",
+      "sha256": "0E3F3505E1089606D855990C6193D71A7550250A32FA12364D6FF41A1DB9F368"
+    },
+    {
+      "before": "Assets/Scripts/Player/CameraFollow.cs.meta",
+      "after": "Assets/Scripts/Player/CameraFollow.cs.meta",
+      "sha256": "56598D75C819409C6415B82121A805520BE284A8147BCBD147C1B970BC98FCE1",
+      "guid": "8da8227d622592849a2d2dd92464907a"
+    },
+    {
+      "before": "Assets/Scripts/Player/PlayerActions.cs",
+      "after": "Assets/Scripts/Player/PlayerActions.cs",
+      "sha256": "788008518960DDF60CDA6FA04BC79B0AA55355768069EEF5F3209D1446EBE722"
+    },
+    {
+      "before": "Assets/Scripts/Player/PlayerActions.cs.meta",
+      "after": "Assets/Scripts/Player/PlayerActions.cs.meta",
+      "sha256": "9D066E944C5005BFCD063D58D7ED3AAEF3B9474B594EBE3D7EDDB8AC737B383C",
+      "guid": "f9466a9ae28a34e419d8f4b08c4f4195"
+    },
+    {
+      "before": "Assets/Scripts/Player/PlayerController.cs",
+      "after": "Assets/Scripts/Player/PlayerController.cs",
+      "sha256": "460D0FB68F757D8839752166A3FA13CB46ADD16E9CBE375791F6725ADE25112E"
+    },
+    {
+      "before": "Assets/Scripts/Player/PlayerController.cs.meta",
+      "after": "Assets/Scripts/Player/PlayerController.cs.meta",
+      "sha256": "2303D5F719F56EE992DE2E0EDE9CFFFDEEED760CC217EF13A6C6C542AEA3EE30",
+      "guid": "d823a855b212a014ab6b021bafd11c60"
+    },
+    {
+      "before": "Assets/Scripts/Player/PlayerInteraction.cs",
+      "after": "Assets/Scripts/Player/PlayerInteraction.cs",
+      "sha256": "86C6259E6D2F1998B22896CA2AA8806AD84DBEB5842F6076AB7C74C201E150BD"
+    },
+    {
+      "before": "Assets/Scripts/Player/PlayerInteraction.cs.meta",
+      "after": "Assets/Scripts/Player/PlayerInteraction.cs.meta",
+      "sha256": "9F5993E24EC8096C497B0D89C26EAEEA6B6A27A89D36D21FC08EFC2D4D0D0AA1",
+      "guid": "0f91eedaab11a1f4ead014aa8429cf5d"
+    },
+    {
+      "before": "Assets/Scripts/Player/PlayerMovement.cs",
+      "after": "Assets/Scripts/Player/PlayerMovement.cs",
+      "sha256": "4C27FC71D4F10AD5C0616457939C4AC59950DF5B8005E027F649F96618C12F82"
+    },
+    {
+      "before": "Assets/Scripts/Player/PlayerMovement.cs.meta",
+      "after": "Assets/Scripts/Player/PlayerMovement.cs.meta",
+      "sha256": "FD8EC56710F57C97DA53F62E6BD51176AA5EF86CAD693E59060F047B1C99992C",
+      "guid": "e5a6b487f2ee8f54db6d4268fefb9fce"
+    },
+    {
+      "before": "Assets/Scripts/Resources/ResourceClump.cs",
+      "after": "Assets/Scripts/Resources/ResourceClump.cs",
+      "sha256": "7858CED9EF524356DEDDE088F52F5D325AC90BFDDE73102C0313F9F476EC5691"
+    },
+    {
+      "before": "Assets/Scripts/Resources/ResourceClump.cs.meta",
+      "after": "Assets/Scripts/Resources/ResourceClump.cs.meta",
+      "sha256": "BD66675962432FA03A85E74D2EBD21A46240D9A1D6625A1B70D859E9DAC11289",
+      "guid": "db7accf6a0e700f4888876474bd92627"
+    },
+    {
+      "before": "Assets/Scripts/Resources/ResourceDrop.cs",
+      "after": "Assets/Scripts/Resources/ResourceDrop.cs",
+      "sha256": "CFC2CD2A1328695EABF3BB230BA469FAFCDAB452E7DB8D4924CAFB0AD9ED7770"
+    },
+    {
+      "before": "Assets/Scripts/Resources/ResourceDrop.cs.meta",
+      "after": "Assets/Scripts/Resources/ResourceDrop.cs.meta",
+      "sha256": "EB77CEC7783511CF480E679D8B48250B528ACF704B4F5A99AE2EADFFB19BBA77",
+      "guid": "dbf542ce371256b44872c466c2e67c4d"
+    },
+    {
+      "before": "Assets/Scripts/Resources/Rock.cs",
+      "after": "Assets/Scripts/Resources/Rock.cs",
+      "sha256": "DC3FE3F3B896FF68C8BFD9AE357D63B2E6DA940968DBE01645CBEAB9E2178E30"
+    },
+    {
+      "before": "Assets/Scripts/Resources/Rock.cs.meta",
+      "after": "Assets/Scripts/Resources/Rock.cs.meta",
+      "sha256": "8FC08075D3D7710B88EB91F941F5C2C20D1A1AAF7D61E5C44EDD93DF3BA706FD",
+      "guid": "27f137956c41ffb4e8f5c66da067ed79"
+    },
+    {
+      "before": "Assets/Scripts/Resources/ToolTarget.cs",
+      "after": "Assets/Scripts/Resources/ToolTarget.cs",
+      "sha256": "BBA3DE20570B1936877993A5806E2D5BF366C11D804BDDE335415DCD35EF43EC"
+    },
+    {
+      "before": "Assets/Scripts/Resources/ToolTarget.cs.meta",
+      "after": "Assets/Scripts/Resources/ToolTarget.cs.meta",
+      "sha256": "282696BEC5D629097E70AA85DD5EA6C66EF7B6462C0093F2E609A09CFC0270E0",
+      "guid": "1a9dc5f9ab4cd0644917c73c89da9b16"
+    },
+    {
+      "before": "Assets/Scripts/Resources/Tree.cs",
+      "after": "Assets/Scripts/Resources/Tree.cs",
+      "sha256": "DEF499829AAAEC601E57D0DF7DB997BADCE9D7AAE900EFEA6600218CFFDE2DA1"
+    },
+    {
+      "before": "Assets/Scripts/Resources/Tree.cs.meta",
+      "after": "Assets/Scripts/Resources/Tree.cs.meta",
+      "sha256": "E282F1F40921AE30369C2FD4493B9B88676D3859D3981AA0AA26CC4F2C505DAD",
+      "guid": "137d38e63d779ab43897eb3f83d7590b"
+    },
+    {
+      "before": "Assets/Scripts/UI/NetUI.cs",
+      "after": "Assets/Scripts/Animals/UI/NetUI.cs",
+      "sha256": "42EF5AA80BFD2BB810A90D720BA8706B891E3B9432F47EC396D9807A38FD380E"
+    },
+    {
+      "before": "Assets/Scripts/UI/NetUI.cs.meta",
+      "after": "Assets/Scripts/Animals/UI/NetUI.cs.meta",
+      "sha256": "C49F244134B971B1583348A0F2C1CD7ACD256E500DD153B824AB9A11DE8B47FC",
+      "guid": "76e0b5538edcb304980f5ef1269ce13d"
+    },
+    {
+      "before": "Assets/Scripts/World/AnimalPlacementZone.cs",
+      "after": "Assets/Scripts/World/AnimalPlacementZone.cs",
+      "sha256": "4BEAD88F841BAEC51D6EFB2D10302E87F0E4C6B17BB0F74CA5F99AC51C3D9469"
+    },
+    {
+      "before": "Assets/Scripts/World/AnimalPlacementZone.cs.meta",
+      "after": "Assets/Scripts/World/AnimalPlacementZone.cs.meta",
+      "sha256": "8EE554EF76328D8B07F87405DF934AAB9A2625DF08685B4366C1B63AE306A8B4",
+      "guid": "c49883c60fd7c2d4a97d60ce3e7e0819"
+    },
+    {
+      "before": "Assets/Scripts/World/AreaTransition.cs",
+      "after": "Assets/Scripts/World/AreaTransition.cs",
+      "sha256": "DFEC625E5FB0FCC4F498B95FEB97752BD735B85FCF1250E2937D8C87966A78F1"
+    },
+    {
+      "before": "Assets/Scripts/World/AreaTransition.cs.meta",
+      "after": "Assets/Scripts/World/AreaTransition.cs.meta",
+      "sha256": "CF55AF75397F7245FBABB314395025F0A82E7028AAFF11DACCD4D3C8674C2274",
+      "guid": "25eb591b4f30cc04097f6fbbaf6db881"
+    },
+    {
+      "before": "Assets/Scripts/World/CaveResourceSpawner.cs",
+      "after": "Assets/Scripts/World/CaveResourceSpawner.cs",
+      "sha256": "CF97BDBAD68795E8A8D597035E313694B4EBAF388E4CB28C43088C7BD7F2141C"
+    },
+    {
+      "before": "Assets/Scripts/World/CaveResourceSpawner.cs.meta",
+      "after": "Assets/Scripts/World/CaveResourceSpawner.cs.meta",
+      "sha256": "C63D0D2A8FBCF017746EF2479897139C43FEACD0C37B878FE2319C05499C9BD7",
+      "guid": "48da28ce18d83d74684df9e549f356ff"
+    },
+    {
+      "before": "Assets/Scripts/World/GameClock.cs",
+      "after": "Assets/Scripts/World/GameClock.cs",
+      "sha256": "0C82366E6A7DA0F21286B99F7F3B9051130DE89FA48374E131015CE6D8ADA89C"
+    },
+    {
+      "before": "Assets/Scripts/World/GameClock.cs.meta",
+      "after": "Assets/Scripts/World/GameClock.cs.meta",
+      "sha256": "0328A3167383ACD8C64DCD8C6F9DE7765ACDD69838B5986F1FE3E73C1AC9DA46",
+      "guid": "d1ae47e7d9694883a3bd794bf096cf68"
+    },
+    {
+      "before": "Assets/Scripts/World/GameClockState.cs",
+      "after": "Assets/Scripts/World/GameClockState.cs",
+      "sha256": "9508D688B911A75E313676D7E85063FB29C9FB6629CC374782F22FAEBE9CAF22"
+    },
+    {
+      "before": "Assets/Scripts/World/GameClockState.cs.meta",
+      "after": "Assets/Scripts/World/GameClockState.cs.meta",
+      "sha256": "B5AE85D58BBE4BFF40F23F02D2D4BE108DCF87C54949ED7995D5D2A47F8FA03F",
+      "guid": "f0fdb008b05a420dbd1ecaf599590d71"
+    },
+    {
+      "before": "Assets/Scripts/World/IInteractable.cs",
+      "after": "Assets/Scripts/World/IInteractable.cs",
+      "sha256": "E6E584C7D5D03F440D27A86AB4B5FA24F2BE8173FC4B3C641E3FF80EEA966E28"
+    },
+    {
+      "before": "Assets/Scripts/World/IInteractable.cs.meta",
+      "after": "Assets/Scripts/World/IInteractable.cs.meta",
+      "sha256": "8C0D2FA18EE9D52988A23928A14281A79AD76BD4E2F8A2A543E2AD9BD630EC03",
+      "guid": "3bea7ede78af21642a4c5e7ae78dccf3"
+    },
+    {
+      "before": "Assets/Scripts/World/PlacementZoneType.cs",
+      "after": "Assets/Scripts/World/PlacementZoneType.cs",
+      "sha256": "D5FD863F6E32CF3720F747BB2537AEA32B3BBBDAABC49DB593F9F68ABBDFA336"
+    },
+    {
+      "before": "Assets/Scripts/World/PlacementZoneType.cs.meta",
+      "after": "Assets/Scripts/World/PlacementZoneType.cs.meta",
+      "sha256": "4F887F5A20614DDD45FFA57A3B8A03DB17AF99A58B7740B12E065F1F2C6BEE68",
+      "guid": "cf3fa761e2e5aaf4a94d5fcdcc4e8575"
+    },
+    {
+      "before": "Assets/Scripts/World/Stations.meta",
+      "after": "Assets/Scripts/World/Stations.meta",
+      "sha256": "44382E02BC61D327E229B8F0D49B399C6BE39DE8163A10F5A98C37E3BAC45491",
+      "guid": "02e706a6b1fc76049af0447e7d4771ea"
+    },
+    {
+      "before": "Assets/Scripts/World/TerrainManager.cs",
+      "after": "Assets/Scripts/World/TerrainManager.cs",
+      "sha256": "BF781EF2F0317449D579DCCEF4F42D012D20A9F6F09C103717E4F7245CEE40D6"
+    },
+    {
+      "before": "Assets/Scripts/World/TerrainManager.cs.meta",
+      "after": "Assets/Scripts/World/TerrainManager.cs.meta",
+      "sha256": "B8D2C6F6424CA0FF3689855DC167355BADDAABB0B129E1D170BB57F5A74682D4",
+      "guid": "a509e1a8cb68f1f40a33a627e9ba818d"
+    },
+    {
+      "before": "Assets/Scripts/World/TerrainToolSystem.cs",
+      "after": "Assets/Scripts/World/TerrainToolSystem.cs",
+      "sha256": "46CC34250D0E290F4C74C8682BF2E0CAC6FF3ADBEC53195C54C3236E9FD32A3C"
+    },
+    {
+      "before": "Assets/Scripts/World/TerrainToolSystem.cs.meta",
+      "after": "Assets/Scripts/World/TerrainToolSystem.cs.meta",
+      "sha256": "7150449DECEC44F910CCAEEC346FAE19A6560CAB86A425991B41259119F39A1B",
+      "guid": "940615c28c8702e439503db5d842f6ed"
+    },
+    {
+      "before": "Assets/Scripts/World/TerrainType.cs",
+      "after": "Assets/Scripts/World/TerrainType.cs",
+      "sha256": "4FCA542E9BC6F5D9043CE8603B0AB1A360A55A8320759188BF4E889F16FE0FCC"
+    },
+    {
+      "before": "Assets/Scripts/World/TerrainType.cs.meta",
+      "after": "Assets/Scripts/World/TerrainType.cs.meta",
+      "sha256": "D3E2E80AEA5B000CB786D129486A241FAED0A12A094A89AA6B7EAE32F4B09FDC",
+      "guid": "31b6dd1107cdb30488d6da8993495522"
+    },
+    {
+      "before": "Assets/Scripts/World/WolrdGrid.cs",
+      "after": "Assets/Scripts/World/WolrdGrid.cs",
+      "sha256": "6883AB4E39003A1A8F16AD07B32BDE7759E504E09B007AF497D9DF884B327A09"
+    },
+    {
+      "before": "Assets/Scripts/World/WolrdGrid.cs.meta",
+      "after": "Assets/Scripts/World/WolrdGrid.cs.meta",
+      "sha256": "0CF35A2F654B7BD85FF8459FC3308340E7A3D274442964208427150D2A327858",
+      "guid": "e71f3419f46ced348a9e1e089a983466"
+    },
+    {
+      "before": "Assets/Scripts/World/Stations/Furnace.cs",
+      "after": "Assets/Scripts/World/Stations/Furnace.cs",
+      "sha256": "15832E9F693BB814F58DA13D532EB45002486ED1C827FA541A8979BAA3BB71EB"
+    },
+    {
+      "before": "Assets/Scripts/World/Stations/Furnace.cs.meta",
+      "after": "Assets/Scripts/World/Stations/Furnace.cs.meta",
+      "sha256": "20385818B0D712671C13811FCD108C024E2297A3D961BFC89D1B46150A4EFB12",
+      "guid": "5b42306102fb3014cbaecb6ff6d5eecb"
+    },
+    {
+      "before": "Assets/Settings/Build Profiles.meta",
+      "after": "Assets/Settings/Build Profiles.meta",
+      "sha256": "75F0CC26B52C84DCA2D22121C6BD00DA75841F0774AEC17636F218F425575E94",
+      "guid": "96c04d2f9000bba4fbc57a85f8d13a1a"
+    },
+    {
+      "before": "Assets/Settings/Lit2DSceneTemplate.scenetemplate",
+      "after": "Assets/Settings/Lit2DSceneTemplate.scenetemplate",
+      "sha256": "CA928761BF976C878D54DF524A3742C5F1BCA53A013B4061ABD2C752C8A212AA"
+    },
+    {
+      "before": "Assets/Settings/Lit2DSceneTemplate.scenetemplate.meta",
+      "after": "Assets/Settings/Lit2DSceneTemplate.scenetemplate.meta",
+      "sha256": "D4CC0F73332C3228945AA64F9C5019F1C1950D77703728C5E9674A0367C5E4D1",
+      "guid": "d03ed43fc9d8a4f2e9fa70c1c7916eb9"
+    },
+    {
+      "before": "Assets/Settings/Renderer2D.asset",
+      "after": "Assets/Settings/Renderer2D.asset",
+      "sha256": "900455794D0D788504847C3AA54E03A0374FD3635AFA295ED05C2F646F974705"
+    },
+    {
+      "before": "Assets/Settings/Renderer2D.asset.meta",
+      "after": "Assets/Settings/Renderer2D.asset.meta",
+      "sha256": "9689252004910CFAD653E8A8D09B8C96BEFB560E1FB583033630DB0F5BB76420",
+      "guid": "424799608f7334c24bf367e4bbfa7f9a"
+    },
+    {
+      "before": "Assets/Settings/Scenes.meta",
+      "after": "Assets/Settings/Scenes.meta",
+      "sha256": "705B24F629AF6836450C9FD2085F781FE11D8633BCAA0C7B3197058B93A766E5",
+      "guid": "d574b2fb4661c408f80aa76c0182931f"
+    },
+    {
+      "before": "Assets/Settings/UniversalRP.asset",
+      "after": "Assets/Settings/UniversalRP.asset",
+      "sha256": "2DEFC3C74F9757F7B801F994D10CD813757B09A39EE075AF79FA514661206AFA"
+    },
+    {
+      "before": "Assets/Settings/UniversalRP.asset.meta",
+      "after": "Assets/Settings/UniversalRP.asset.meta",
+      "sha256": "8B7653265C1A9A054461264FC7B03BDBAFC030149949FCE5BF9E85924FB565A5",
+      "guid": "681886c5eb7344803b6206f758bf0b1c"
+    },
+    {
+      "before": "Assets/Settings/Build Profiles/Windows.asset",
+      "after": "Assets/Settings/Build Profiles/Windows.asset",
+      "sha256": "393BFEBD2ABE82FFC84A433E72384ECD3D6D5757E80D5CAA9BB470CF60DA1E5E"
+    },
+    {
+      "before": "Assets/Settings/Build Profiles/Windows.asset.meta",
+      "after": "Assets/Settings/Build Profiles/Windows.asset.meta",
+      "sha256": "83DED8A64F57BCC8E669A68441C8605E2825236C865FB7D8140DEBEB0D285D40",
+      "guid": "264ac811b43004f48b5dc6c8d93fe17e"
+    },
+    {
+      "before": "Assets/Settings/Scenes/URP2DSceneTemplate.unity",
+      "after": "Assets/Settings/Scenes/URP2DSceneTemplate.unity",
+      "sha256": "F6FB3E91AAA90417E2920B7F903066833B3B9AEA72DDCB5E46B91AFA729C2E90"
+    },
+    {
+      "before": "Assets/Settings/Scenes/URP2DSceneTemplate.unity.meta",
+      "after": "Assets/Settings/Scenes/URP2DSceneTemplate.unity.meta",
+      "sha256": "E7391FF924B7DEFDF30E0B0B235F8113618481C93F567E0C699C8895A9534579",
+      "guid": "2cda990e2423bbf4892e6590ba056729"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Fonts.meta",
+      "after": "Assets/TextMesh Pro/Fonts.meta",
+      "sha256": "11E80153FA39B86EFADB8917ECDE12A0402FE0729F2C88F6F8D1999F3FB04748",
+      "guid": "6ab70aee4d56447429c680537fbf93ed"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources.meta",
+      "after": "Assets/TextMesh Pro/Resources.meta",
+      "sha256": "167448559DB07C9857B206A0F5A0AEDCD6A6DAD900D618B35B0702D636573805",
+      "guid": "243e06394e614e5d99fab26083b707fa"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders.meta",
+      "after": "Assets/TextMesh Pro/Shaders.meta",
+      "sha256": "C109EB7E331AFFEDB377F7051DF3D4881F8529B65F9593234585713E6E94ED30",
+      "guid": "e9f693669af91aa45ad615fc681ed29f"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt",
+      "after": "Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt",
+      "sha256": "37F8552E9A874EC10710DC0EDE6A9ADF168E6609FBD02A507F35629373B85A48"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta",
+      "after": "Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta",
+      "sha256": "5DBEC32C014C17D94674AF5F1494D49B42BA00EDD50397F895F088C868CCBF86",
+      "guid": "6e59c59b81ab47f9b6ec5781fa725d2c"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Fonts/LiberationSans.ttf",
+      "after": "Assets/TextMesh Pro/Fonts/LiberationSans.ttf",
+      "sha256": "E5B0AF421EA2BFBC1AC8D251D647268087AE82786234C57F757D1F0B90FA8B49"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta",
+      "after": "Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta",
+      "sha256": "E2E35A015703584FB119355FA02631764D111C3E112D32519801D46BD697B596",
+      "guid": "e3265ab4bf004d28a9537516768c1c75"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/Fonts & Materials.meta",
+      "after": "Assets/TextMesh Pro/Resources/Fonts & Materials.meta",
+      "sha256": "8917470A9265BEB1EF55A28C6A3718EB12EC8004554499998CC345056247995F",
+      "guid": "731f1baa9d144a9897cb1d341c2092b8"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt",
+      "after": "Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt",
+      "sha256": "3A73E5FFE2510756DD3C2E982FDC1218B4BE82C6E21ABDE88070D6860E1BC8E6"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta",
+      "after": "Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta",
+      "sha256": "D5A86D8B7DB6AA3CA6F4A63750EB94E0C42A64909B47D8C6C6F2565845534490",
+      "guid": "fade42e8bc714b018fac513c043d323b"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt",
+      "after": "Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt",
+      "sha256": "62D3F4D5F64AAF885692D2D13A8313F6918E6E4C5AEB3990A43F614652BFD89C"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta",
+      "after": "Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta",
+      "sha256": "6A925814D5E251A0CED6DE210DB2BACF2DE29B4F0DC2991E85C908632E9565E4",
+      "guid": "d82c1b31c7e74239bff1220585707d2b"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/Style Sheets.meta",
+      "after": "Assets/TextMesh Pro/Resources/Style Sheets.meta",
+      "sha256": "1FDF0423552F46284FB97894F36ADCD34D32E595AAF5C7CF1CE38A2349FAAF89",
+      "guid": "4aecb92fff08436c8303b10eab8da368"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/TMP Settings.asset",
+      "after": "Assets/TextMesh Pro/Resources/TMP Settings.asset",
+      "sha256": "7BE438062CDC296835A1258B68BCBEB8E9FDC4B01EA27C05A24A1074260F7424"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/TMP Settings.asset.meta",
+      "after": "Assets/TextMesh Pro/Resources/TMP Settings.asset.meta",
+      "sha256": "A65193B095EC3606789A3191751A837704CF52D4F461993AE7903024C6D43F45",
+      "guid": "3f5b5dff67a942289a9defa416b206f3"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat",
+      "after": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat",
+      "sha256": "B6B65C34E4907DD3006C2217FC8A4CEF81B6DA24DF0A3DE8E2288199EB6C5A9D"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat.meta",
+      "after": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat.meta",
+      "sha256": "EF2EEE63B288D47823DA38109E3E8C879F4717A82DC662AC2D5E2460DACDE698",
+      "guid": "e73a58f6e2794ae7b1b7e50b7fb811b0"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset",
+      "after": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset",
+      "sha256": "E2D77876F2B90D98BA2424F6FC32B1403EA701DE8FD24A8FE8E571ECC3CDC10A"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset.meta",
+      "after": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset.meta",
+      "sha256": "D6D86504040CF6E736767FDA9BDEF494AFB06D5304384243E2DD703EBA3A4A3D",
+      "guid": "2e498d1c8094910479dc3e1b768306a4"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat",
+      "after": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat",
+      "sha256": "25874340976D40E9F9E8ABF731B7F32E5A478541DEAD9288140BD60C7A3287D9"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat.meta",
+      "after": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat.meta",
+      "sha256": "A8CF0EE9888A163E892368B4660B9C62A7375E7F8AFDB8EE02E5C91CA1CDB355",
+      "guid": "79459efec17a4d00a321bdcc27bbc385"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+      "after": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+      "sha256": "C3FF50E3133D989180B187748FFC67903F1FEDE099A5B85B4FCBD8CB6E8BE958"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset.meta",
+      "after": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset.meta",
+      "sha256": "37233890984555987CB585551BC885069F2849A9B0D1C2191AF073B9376AA10F",
+      "guid": "8f586378b4e144a9851e7b34d9b748ee"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset",
+      "after": "Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset",
+      "sha256": "93E073CDB91B7E3D2FA31E2DD13626D7B9D2F327904BA8C3C2B97A3EECFBABAC"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta",
+      "after": "Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta",
+      "sha256": "B832663CA09EC7AF8C8E816FD91A718B2AF6C21AB4F126FA818871AD53BCE763",
+      "guid": "f952c082cb03451daed3ee968ac6c63e"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl",
+      "after": "Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl",
+      "sha256": "88CF0F62E4000B71750C059D0886B19504CD1CF10F39BB61DDC11B77A882D417"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl.meta",
+      "after": "Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl.meta",
+      "sha256": "E1D0C5347B3C55930759F5BC0985E11611A4B2FF22EEF24523EB108687BD1642",
+      "guid": "96de908384869cd409c75efa351d5edf"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader",
+      "sha256": "42892A52F22BDDE6D482CF2DA5F35E4B813063FC6FE42189EEE5562080079494"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta",
+      "sha256": "91BE1D5618A7DA33C878E20CF2BE3E13B897D4976C70BDE0CDA7A67DBD502CD2",
+      "guid": "48bb5f55d8670e349b6e614913f9d910"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader",
+      "sha256": "B50AFC7EDC8A710F8B4159149B2391E7238B5E4076CC0EA2119090ED29E13B4A"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta",
+      "sha256": "7430F3E97AE1B46F34E1CA75508705BB7B944307C41DC568EA728011F327086D",
+      "guid": "1e3b057af24249748ff873be7fafee47"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader",
+      "sha256": "1D32F34C71276C1321AA0540A2410E15808743A38B2026923045A4DEC4A79B58"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta",
+      "sha256": "3D462E6F8BA57F45DC5E6000020DB066C36ED5A1A24F74F749727812373C2325",
+      "guid": "128e987d567d4e2c824d754223b3f3b0"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader",
+      "sha256": "A0D318756CBA0F95A7052C387E629D0ADD3E9A4125C8333F1D1ED591AF5F17CB"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta",
+      "sha256": "FB8FC84B612E19C169CDF3596195B416E68D227A8987A0EAA90D8C137FB69797",
+      "guid": "dd89cf5b9246416f84610a006f916af7"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader",
+      "sha256": "2A991951B00B0C052363A1025F655450054325437B3D13C2623A987C8EC77C30"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta",
+      "sha256": "BEA74D576F181A8BB04B8CF02EEDD0136540325ECB2824928A3AA52C75ADCB13",
+      "guid": "14eb328de4b8eb245bb7cea29e4ac00b"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph",
+      "sha256": "BF68062F68B38B588ABD1C354F64E905F824D9A2C47F92EBDD70A32989EB2097"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph.meta",
+      "sha256": "D1B70558E8B974D918E13C010DB6D375FEF815BA530BC2421AB031AA3A784EE8",
+      "guid": "ca2ed216f98028c4dae6c5224a952b3c"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph",
+      "sha256": "8A969C2D775079CCE4E1C45D5EB6D3964B27D44DC884178363050C74FD5E9742"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph.meta",
+      "sha256": "8CD498CE8F6ED2E7C0560D605EB912455CD6FDAF09A4D545D9743F63B3426BD0",
+      "guid": "f63d574838ccfb44f84acc05fed0af48"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader",
+      "sha256": "41CFF58473557BF760D03513A8C098F43A24E4EEB4C8CCD7D828C045A338A9ED"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta",
+      "sha256": "3744D078F9A8B6D3C5D9BCA51E43F9223544FCAFAF9396E121F49EA84A0609D3",
+      "guid": "bc1ede39bf3643ee8e493720e4259791"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader",
+      "sha256": "FB286386D0592CE6D63EB736F180B4B0F638EC538B0855AA54767A438EBD1173"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta",
+      "sha256": "1EECA1536C7506F79D4D877B866A5FB88DB8F402634E091B6D78AA9D21C9D18B",
+      "guid": "a02a7d8c237544f1962732b55a9aebf1"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader",
+      "sha256": "8B30C140F6AF9134392FE6ECF4C0676DB73F873489AC52ADFB47BBD288CB51B8"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta",
+      "sha256": "E3412891B9306B017E60CBA4AE4F6D258EE8B161D986DCDE9CEFB3D60345514D",
+      "guid": "c8d12adcee749c344b8117cf7c7eb912"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader",
+      "sha256": "4BC2DB64BEFBD0E37E23539F21096AD2FCD9D61B36D2174D208A7D831A0883F7"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader.meta",
+      "sha256": "65ECBCE6F1621F2D7DDC5E6004DDA5E55E1F58EC6E01178F3691E1E81E01DE55",
+      "guid": "0178fcb869bafef4690d177d31d17db8"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader",
+      "sha256": "44C39AABC7E88E7E1FEFFC1880DF754F4ADF86B62E9512AA89E9D2D65171AFF4"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta",
+      "sha256": "F2112F50C72762D4E6731391495EA11F76975D677B698E9BCFDD38275EA18F9D",
+      "guid": "fe393ace9b354375a9cb14cdbbc28be4"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader",
+      "sha256": "F9FAE5906DD37D89298338953294459975DE58A5421E68DD9E82A79794B95509"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta",
+      "sha256": "95AA060F371EE503A22C0A0B018E029C0328BD82B9317FEAA784432B0A787343",
+      "guid": "85187c2149c549c5b33f0cdb02836b17"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader",
+      "sha256": "5DADB68B56429547918B392626E9AF8FD5173936D20BB43CFCA58DFA00947257"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta",
+      "sha256": "42439F5AC7491998F562E8EDE73D64C3512953EB99FB1B49E833F5D9999A7660",
+      "guid": "f7ada0af4f174f0694ca6a487b8f543d"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph",
+      "sha256": "E0148CE8E5904232A4E711376A45B7AF2A007FB9690C5A69C1CB4952A696CDBF"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph.meta",
+      "sha256": "4C36ABF5F2611C9D2CB04E7DA8C30E42077503A17CB218020E171B6D3FF664F7",
+      "guid": "a3d800b099a06e0478fb790c5e79057a"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph",
+      "sha256": "DC15B6819AD87A4B34ED888AE2C274624EFC0ADA902D1A9E7752D87922414DCC"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph.meta",
+      "sha256": "F1EF815E2672FD770F47EE424C64F7ECDBDC642B7475828C29DB032586AA10B6",
+      "guid": "124c112a6e8f1a54e8b0870e881b56d8"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+      "sha256": "10EFE6D4728474A09970B857FAF37913793E168DC13DBD4D7316B54B37615D97"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta",
+      "sha256": "0897FB06D170043FFFA2D28783B347BBAEE87A3F09F08374CA44B2C3848697D6",
+      "guid": "68e6db2ebdc24f95958faec2be5558d6"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_Sprite.shader",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_Sprite.shader",
+      "sha256": "AF669BB9AE136C8099F8E0A94A6933FD2F1E1FB0A6842129939A319FAB4B8DBB"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta",
+      "sha256": "9609584C5249687F3765F0018A93DFD6445C7E35D5AEE4E87556F111C8852819",
+      "guid": "cf81c85f95fe47e1a27f6ae460cf182c"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc",
+      "after": "Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc",
+      "sha256": "D9D43DDD9810476162F21B42477D9CE2CDC4E6CC7571D354C3253AAFC6673EAD"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta",
+      "sha256": "2E16FA15EF884A60A402D8B696F8B09E5315CBB468BA223D256030C7FE2B0667",
+      "guid": "c334973cef89a9840b0b0c507e0377ab"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc",
+      "after": "Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc",
+      "sha256": "66DB1F03E8D7A413EBA79BCB6602FDB2DE710B586F34A6F2584ED6F68F028E90"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta",
+      "sha256": "EDACE33591894D86D9A4144466FB3606E538D3341030FE22F908551755120EA5",
+      "guid": "3997e2241185407d80309a82f9148466"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc",
+      "after": "Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc",
+      "sha256": "244B442520282A66363D121C8D2AEEB30BB1E72CBBADBF41CE68D9100322ADE5"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta",
+      "sha256": "247746F3A4E39DD24D1AD99E4FAE03AE8976586307948B2846529A876DCB0A63",
+      "guid": "d930090c0cd643c7b55f19a38538c162"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMPro.cginc",
+      "after": "Assets/TextMesh Pro/Shaders/TMPro.cginc",
+      "sha256": "14EDB7D7B88CAF2B82CAE68200ABE895E5B5B3474C3FFFBF0E9B4B09A4E2467E"
+    },
+    {
+      "before": "Assets/TextMesh Pro/Shaders/TMPro.cginc.meta",
+      "after": "Assets/TextMesh Pro/Shaders/TMPro.cginc.meta",
+      "sha256": "A9CF9D5431B809E36B8FFFF4377B5EBDA7D386A36D48838CD134BC09F3CAEC6C",
+      "guid": "407bc68d299748449bbf7f48ee690f8d"
+    },
+    {
+      "before": "Assets/Tiles/Terrarin.meta",
+      "after": "Assets/Tiles/Terrain.meta",
+      "sha256": "9551E37ECF6DF1D281C1A8BE99157D9762310A3416D8EAA1D123E7571713248D",
+      "guid": "15b184187adb63241a69734a3f6c0edf"
+    },
+    {
+      "before": "Assets/Tiles/Terrarin/Ground-Grass-Placeholder_0.asset",
+      "after": "Assets/Tiles/Terrain/Ground-Grass-Placeholder_0.asset",
+      "sha256": "DF310961976A13E2554268CA7BF97D6376380B5FBE2F8EA72CCCC7F0D2773E58"
+    },
+    {
+      "before": "Assets/Tiles/Terrarin/Ground-Grass-Placeholder_0.asset.meta",
+      "after": "Assets/Tiles/Terrain/Ground-Grass-Placeholder_0.asset.meta",
+      "sha256": "2777CC9D034240F61E045E5C5E8B45BD243DC647021A6C2A19C03BBA599D36A6",
+      "guid": "a86daa7223ed35a4f8671500de9b3298"
+    },
+    {
+      "before": "Assets/Tiles/Terrarin/Ground-Sand-Placeholder.asset",
+      "after": "Assets/Tiles/Terrain/Ground-Sand-Placeholder.asset",
+      "sha256": "89D279F06B4E526698EC236A7BF84A5EE6E62B58EB3DD19AE3CF1D8AA5FCF4CB"
+    },
+    {
+      "before": "Assets/Tiles/Terrarin/Ground-Sand-Placeholder.asset.meta",
+      "after": "Assets/Tiles/Terrain/Ground-Sand-Placeholder.asset.meta",
+      "sha256": "CC7D8A03F5001A6CCC13DA3E3FB0909CC3E358FC117F51323A37606522408739",
+      "guid": "0de049d20648d3f4aaf54b144a572135"
+    },
+    {
+      "before": "Assets/Tiles/Terrarin/Ground-Stone-Placeholder_0.asset",
+      "after": "Assets/Tiles/Terrain/Ground-Stone-Placeholder_0.asset",
+      "sha256": "265AAEDD51EB8EBD138C4B7413C42AF9BE84FEC5F5D05382373C80F1682AD4B0"
+    },
+    {
+      "before": "Assets/Tiles/Terrarin/Ground-Stone-Placeholder_0.asset.meta",
+      "after": "Assets/Tiles/Terrain/Ground-Stone-Placeholder_0.asset.meta",
+      "sha256": "375A325B9DA6F7EF0D3E3984E10D9A590A6DFF6DF758CDE6A58AD9734B66866E",
+      "guid": "97087c9d2b593cf49ac58b7c38938ef5"
+    },
+    {
+      "before": "Assets/Tiles/Terrarin/WorldTerrain.prefab",
+      "after": "Assets/Prefabs/World/WorldTerrain.prefab",
+      "sha256": "0B6FB748A406CE1BF03DF95AD9762CF6694DFAB4A2A5E4663BA6D49AA8543861"
+    },
+    {
+      "before": "Assets/Tiles/Terrarin/WorldTerrain.prefab.meta",
+      "after": "Assets/Prefabs/World/WorldTerrain.prefab.meta",
+      "sha256": "89691C1846164E0007E3E2743366610A741BC9798B98B54E476104F64A707439",
+      "guid": "a751f89791cb0164f823df2702689be2"
+    }
+  ],
+  "newFolderMetadata": [
+    {
+      "path": "Assets/Data.meta",
+      "guid": "0959d791ea7b436d93a4f3f040305b86"
+    },
+    {
+      "path": "Assets/Prefabs/Animals.meta",
+      "guid": "c22a46d0b67e44f79aff0186645edb3b"
+    },
+    {
+      "path": "Assets/Prefabs/Resources.meta",
+      "guid": "a9af391472984005841142871210384f"
+    },
+    {
+      "path": "Assets/Prefabs/Items.meta",
+      "guid": "99e20d7b232248578617d0a8fa3a2a6c"
+    },
+    {
+      "path": "Assets/Prefabs/UI.meta",
+      "guid": "a9bfa322a727430fabc7e3a5d548a0a5"
+    },
+    {
+      "path": "Assets/Prefabs/World.meta",
+      "guid": "b434ad8dc59244d3967dce3e18cee168"
+    },
+    {
+      "path": "Assets/Art/Animals.meta",
+      "guid": "d4bc554e105c469d8b98702a8cfeef54"
+    },
+    {
+      "path": "Assets/Art/Characters.meta",
+      "guid": "d5eeab605a6046988b53c1ca00a11edf"
+    },
+    {
+      "path": "Assets/Art/Environment.meta",
+      "guid": "61daebadc5be456892265374f990c7b7"
+    },
+    {
+      "path": "Assets/Art/Items.meta",
+      "guid": "bd6113024fc54e2694278a47d5a8e1b0"
+    },
+    {
+      "path": "Assets/Art/UI.meta",
+      "guid": "a08facb3d7d642a483e4e4c9815da8ae"
+    }
+  ]
+}

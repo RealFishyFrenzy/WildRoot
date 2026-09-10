@@ -1,28 +1,35 @@
 using System;
-using UnityEngine;
 
 [Serializable]
 public class AnimalInstance
 {
+    public AnimalData animalData;
+
     public string animalName;
-    public string speciesName;
 
     public float foodLevel;
-    public float maxFoodLevel;
+    public float health;
+    public float ageYears;
 
-    public GameObject animalPrefab;
+    public AnimalSex sex;
+
+    public string SpeciesName => animalData != null && animalData.species != null &&
+        !string.IsNullOrEmpty(animalData.species.commonName)
+        ? animalData.species.commonName : "Unknown Species";
 
     public AnimalInstance(
+        AnimalData animalData,
         string animalName,
-        string speciesName,
         float foodLevel,
-        float maxFoodLevel,
-        GameObject animalPrefab)
+        float health,
+        float ageYears,
+        AnimalSex sex)
     {
+        this.animalData = animalData;
         this.animalName = animalName;
-        this.speciesName = speciesName;
         this.foodLevel = foodLevel;
-        this.maxFoodLevel = maxFoodLevel;
-        this.animalPrefab = animalPrefab;
+        this.health = health;
+        this.ageYears = ageYears;
+        this.sex = sex;
     }
 }
