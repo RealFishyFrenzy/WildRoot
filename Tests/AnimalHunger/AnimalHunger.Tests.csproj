@@ -16,6 +16,9 @@
     <Compile Include="../../Assets/Scripts/Inventory/AnimalInventory.cs" />
     <Compile Include="../../Assets/Scripts/Enclosures/AnimalEnclosure.cs" />
     <Compile Include="../../Assets/Scripts/World/GameClock*.cs" />
+    <Compile Include="../../Assets/Scripts/World/IInteractionPrompt.cs" />
+    <Compile Include="../../Assets/Scripts/World/UI/GameplayNotifications.cs" />
+    <Compile Include="../../Assets/Scripts/Animals/UI/AnimalPresentation.cs" />
     <Compile Include="../../Assets/Scripts/Items/ToolType.cs" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />

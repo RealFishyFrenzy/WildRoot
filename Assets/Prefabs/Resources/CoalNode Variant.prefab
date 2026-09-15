@@ -9,6 +9,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1729986162578346778, guid: f3040d9d7368bcd4688603850ecfd811, type: 3}
+      propertyPath: maximumHitsToBreak
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729986162578346778, guid: f3040d9d7368bcd4688603850ecfd811, type: 3}
+      propertyPath: minimumHitsToBreak
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729986162578346778, guid: f3040d9d7368bcd4688603850ecfd811, type: 3}
       propertyPath: worldItemDropPrefab
       value: 
       objectReference: {fileID: 7657241960088815776, guid: 9a5176ae7ebe58748a6a9b202aabf1d0, type: 3}

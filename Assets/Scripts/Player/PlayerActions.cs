@@ -34,6 +34,12 @@ public class PlayerActions : MonoBehaviour
             if (inventoryUI == null)
                 inventoryUI = InventoryUI.Instance != null ? InventoryUI.Instance : FindAnyObjectByType<InventoryUI>();
 
+            if (netUI != null && netUI.IsOpen)
+            {
+                netUI.CancelPlacement();
+                return;
+            }
+
             if (inventoryUI != null && inventoryUI.IsOpen)
                 inventoryUI.Close();
             else if (PlayerController.Instance.ControlsEnabled)
@@ -43,7 +49,12 @@ public class PlayerActions : MonoBehaviour
         }
 
         if (!PlayerController.Instance.ControlsEnabled)
+        {
+            // Net remains closable even though it blocks normal gameplay input.
+            if (netUI != null && netUI.IsOpen && Input.GetMouseButtonDown(1))
+                netUI.CancelPlacement();
             return;
+        }
 
         hotbar.HandleSelectionInput();
 
@@ -139,10 +150,23 @@ public class PlayerActions : MonoBehaviour
         if (item == null)
             return;
 
+        ToolInstance toolState = hotbar.SelectedInventorySlot?.ToolState;
+        if (item is ToolItem gatheringTool && gatheringTool.IsGatheringTool &&
+            (toolState == null || !toolState.CanUse))
+            return;
+
         Vector3 mousePosition =
             Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         mousePosition.z = 0f;
+
+        if (item is ToolItem fishingRod && fishingRod.toolType == ToolType.FishingRod)
+        {
+            if (FishingSystem.Instance != null)
+                FishingSystem.Instance.TryUseFishingRod(mousePosition);
+
+            return;
+        }
 
         Collider2D[] targets =
         Physics2D.OverlapPointAll(mousePosition);
@@ -158,16 +182,28 @@ public class PlayerActions : MonoBehaviour
                 itemWasUsed = true;
                 break;
             }
+            // An underpowered physical strike is handled, but not successful damage.
+            // Do not dig terrain behind it (or try another overlapping collider).
+            if (item is ToolItem attemptedTool)
+            {
+                ToolTarget node = target.GetComponentInParent<ToolTarget>();
+                if (node != null && node.IsUnderpowered(attemptedTool.toolType, attemptedTool.Power))
+                    return;
+            }
         }
 
         // If nothing handled the tool, try using it on terrain.
         if (!itemWasUsed && item is ToolItem tool)
         {
             itemWasUsed =
+                TerrainToolSystem.Instance != null &&
                 TerrainToolSystem.Instance.UseTool(tool, mousePosition);
         }
 
-        if (itemWasUsed && item.consumable)
+        inventory.RecordToolUse(toolState, itemWasUsed);
+
+        // Stateful tools are not removed by definition; depleted tools remain disabled.
+        if (itemWasUsed && item.consumable && !(item is ToolItem))
         {
             inventory.RemoveItem(item, 1);
         }

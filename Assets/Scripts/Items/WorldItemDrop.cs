@@ -86,14 +86,18 @@ public class WorldItemDrop : MonoBehaviour
 
         PlayerInventory inventory = other.GetComponent<PlayerInventory>();
 
-        if (inventory == null || item == null)
+        if (inventory == null || item == null || quantity <= 0)
             return;
 
         int accepted = inventory.AddItemPartial(item, quantity);
         if (accepted == 0)
+        {
+            GameplayNotifications.Show("Unable to collect — inventory full or item unavailable", "pickup-blocked");
             return;
+        }
 
         quantity -= accepted;
+        GameplayNotifications.Show($"+{accepted} {item.itemName}");
         Debug.Log($"Picked up {accepted} {item.itemName}.");
 
         if (quantity == 0)

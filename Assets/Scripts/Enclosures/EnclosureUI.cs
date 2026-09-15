@@ -122,18 +122,17 @@ public class EnclosureUI : MonoBehaviour
         }
 
         bool removed =
-            currentEnclosure.RemoveAnimal(animal);
+            animalInventory.TryTakeFromEnclosure(currentEnclosure, animal);
 
         if (!removed)
         {
+            GameplayNotifications.Show("Cannot take animal: check net capacity", "net-full");
             Debug.LogWarning(
                 $"Could not remove {animal.animalName} from enclosure."
             );
 
             return;
         }
-
-        animalInventory.AddAnimal(animal);
 
         Debug.Log(
             $"Took {animal.animalName} from {currentEnclosure.EnclosureName}."

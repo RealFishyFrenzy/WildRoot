@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 438c6452879b88041b3ab8f27ed28d7a, type: 3}
+  m_Name: IronShovelRecipe
+  m_EditorClassIdentifier: Assembly-CSharp::CraftingRecipe
+  recipeName: Iron Shovel
+  context: 1
+  ingredients:
+  - item: {fileID: 11400000, guid: 9e99658546eab684c8079cadf2aa9b04, type: 2}
+    amount: 3
+  - item: {fileID: 11400000, guid: 1bd06ca6e3961244eb87669f286290f6, type: 2}
+    amount: 2
+  outputItem: {fileID: 11400000, guid: 3733369266a1f1347b7b4ed20a7ac9b2, type: 2}
+  outputAmount: 1

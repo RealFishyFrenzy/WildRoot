@@ -1,8 +1,20 @@
 using UnityEngine;
 
+[DefaultExecutionOrder(-1000)]
 public class DebugTreeSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject treePrefab;
+    private DebugResourceRefresh resourceRefresh;
+
+    private void Awake()
+    {
+        if (Debug.isDebugBuild)
+        {
+            resourceRefresh = GetComponent<DebugResourceRefresh>();
+            if (resourceRefresh == null)
+                resourceRefresh = gameObject.AddComponent<DebugResourceRefresh>();
+        }
+    }
 
     private void Update()
     {
@@ -13,6 +25,8 @@ public class DebugTreeSpawner : MonoBehaviour
         {
             SpawnTreeAtMouse();
         }
+        if (Debug.isDebugBuild && Input.GetKeyDown(KeyCode.L))
+            resourceRefresh?.Refresh();
     }
 
     private void SpawnTreeAtMouse()

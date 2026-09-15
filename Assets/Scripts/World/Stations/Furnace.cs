@@ -1,7 +1,8 @@
 using UnityEngine;
 
-public class Furnace : MonoBehaviour, IInteractable
+public class Furnace : MonoBehaviour, IInteractable, IInteractionPrompt
 {
+    public string InteractionLabel => "Use Furnace";
     [SerializeField] private PlayerInventory inventory;
     [SerializeField] private Hotbar hotbar;
 
@@ -26,6 +27,7 @@ public class Furnace : MonoBehaviour, IInteractable
 
         if (heldItem == null)
         {
+            GameplayNotifications.Show("Hold a processable item first", "processing-failure");
             Debug.Log("Hold a processable item first.");
             return;
         }
@@ -51,6 +53,7 @@ public class Furnace : MonoBehaviour, IInteractable
 
             if (!CraftingSystem.TryCraft(inventory, recipe))
             {
+                GameplayNotifications.Show("Cannot process: check ingredients and inventory space", "processing-failure");
                 Debug.Log(
                     $"Cannot craft {recipe.recipeName}: check ingredients, inventory space, and recipe settings."
                 );
@@ -63,11 +66,14 @@ public class Furnace : MonoBehaviour, IInteractable
                 $"{recipe.outputItem.itemName}!"
             );
 
+            GameplayNotifications.Show($"Created {recipe.outputAmount} {recipe.outputItem.itemName}");
+
             return;
         }
 
         Debug.Log(
             $"{heldItem.itemName} can't be processed here."
         );
+        GameplayNotifications.Show($"{heldItem.itemName} cannot be processed here", "processing-failure");
     }
 }

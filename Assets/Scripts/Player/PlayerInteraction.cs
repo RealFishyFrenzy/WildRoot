@@ -13,10 +13,26 @@ public class PlayerInteraction : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
     }
 
+    private void Start()
+    {
+        GameplayFeedbackUI view = GetComponent<GameplayFeedbackUI>();
+        if (view == null)
+            view = gameObject.AddComponent<GameplayFeedbackUI>();
+        view.SetInteraction(this);
+    }
+
     public void TryInteract()
     {
-        if (!PlayerController.Instance.ControlsEnabled)
-            return;
+        IInteractable interactable = ResolveTarget();
+        interactable?.Interact();
+    }
+
+    // Both the prompt and E use this exact query and control gate.
+    public IInteractable ResolveTarget()
+    {
+        if (PlayerController.Instance == null || !PlayerController.Instance.ControlsEnabled ||
+            playerMovement == null || !isActiveAndEnabled)
+            return null;
         Vector2 interactionPoint =
             (Vector2)transform.position +
             playerMovement.FacingDirection * interactionDistance;
@@ -29,8 +45,11 @@ public class PlayerInteraction : MonoBehaviour
 
         if (hit != null && hit.TryGetComponent(out IInteractable interactable))
         {
-            interactable.Interact();
+            if (interactable is Behaviour behaviour && !behaviour.isActiveAndEnabled)
+                return null;
+            return interactable;
         }
+        return null;
     }
 
     private void OnDrawGizmosSelected()

@@ -35,12 +35,22 @@ public class CatchableAnimal : ToolTarget
         if (!animal.enabled)
             return false;
 
+        if (!animalInventory.HasSpace)
+        {
+            GameplayNotifications.Show("Net is full", "net-full");
+            return false;
+        }
+
         // Stop clock notifications before taking the snapshot (Destroy is deferred).
         animal.enabled = false;
 
         AnimalInstance capturedAnimal = animal.GetAnimalInstance();
 
-        animalInventory.AddAnimal(capturedAnimal);
+        if (!animalInventory.AddAnimal(capturedAnimal))
+        {
+            animal.enabled = true;
+            return false;
+        }
 
         Debug.Log($"Caught {capturedAnimal.animalName}!");
 

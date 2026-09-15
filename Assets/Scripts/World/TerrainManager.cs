@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -11,6 +12,7 @@ public class TerrainManager : MonoBehaviour
     [Header("Terrain Tiles")]
     [SerializeField] private TileBase grassTile;
     [SerializeField] private TileBase sandTile;
+    [SerializeField] private TileBase waterTile;
 
     private void Awake()
     {
@@ -30,6 +32,9 @@ public class TerrainManager : MonoBehaviour
 
         if (tile == sandTile)
             return TerrainType.Sand;
+
+        if (tile ==  waterTile)
+            return TerrainType.Water;
 
         return TerrainType.None;
     }

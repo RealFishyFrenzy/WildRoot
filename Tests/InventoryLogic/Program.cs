@@ -1,12 +1,14 @@
 using System;
 using System.Reflection;
 
-static class Program
+static partial class Program
 {
     private static int passed;
 
     static void Main()
     {
+        RunToolTests();
+        RunHandCraftingTests();
         Run("Stack filling and overflow rejection", () =>
         {
             var item = Item();
@@ -140,7 +142,76 @@ static class Program
             Check(!inventory.AddItem(item) && inventory.AddItemPartial(item, 1) == 0);
             Check(events == 2);
         });
-        Console.WriteLine($"Passed {passed} inventory/crafting regression scenarios.");
+        Run("Whole-slot swap preserves quantities and slot identities", () =>
+        {
+            var a = Item(); var b = Item();
+            var inventory = Inventory(20);
+            inventory.AddItem(a, 7); inventory.AddItem(b, 4);
+            var first = inventory.GetSlot(0); var second = inventory.GetSlot(1);
+            int events = 0; inventory.Changed += () => events++;
+            Check(inventory.TryMoveOrSwap(0, 1));
+            Check(ReferenceEquals(first, inventory.GetSlot(0)) && ReferenceEquals(second, inventory.GetSlot(1)));
+            Check(first.item == b && first.quantity == 4 && second.item == a && second.quantity == 7);
+            Check(events == 1 && inventory.GetQuantity(a) == 7 && inventory.GetQuantity(b) == 4);
+            Check(inventory.TryMoveOrSwap(1, 19));
+            Check(second.IsEmpty && second.quantity == 0 && inventory.GetSlot(19).quantity == 7);
+            Check(inventory.TryMoveOrSwap(19, 9));
+            Check(inventory.GetSlot(9).item == a && inventory.GetSlot(19).IsEmpty && events == 3);
+        });
+        Run("Invalid moves do not mutate or notify; same-item stacks swap without merging", () =>
+        {
+            var item = Item(); var inventory = Inventory(2);
+            inventory.AddItem(item, 4);
+            int events = 0; inventory.Changed += () => events++;
+            Check(!inventory.TryMoveOrSwap(-1, 0) && !inventory.TryMoveOrSwap(0, 2));
+            Check(!inventory.TryMoveOrSwap(0, 0) && !inventory.TryMoveOrSwap(1, 0));
+            Check(events == 0 && inventory.GetQuantity(item) == 4);
+            inventory.AddItem(item, 8);
+            Check(inventory.TryMoveOrSwap(0, 1));
+            Check(inventory.GetSlot(0).quantity == 2 && inventory.GetSlot(1).quantity == 10);
+        });
+        Run("Tool-shaped upgrade recipes support optional old-tool consumption atomically", () =>
+        {
+            // Fixture values only, not approved gameplay costs or upgraded content.
+            var oldTool = Item(false); var upgradedTool = Item(false); var bars = Item();
+            var inventory = Inventory(2);
+            inventory.AddItem(oldTool); inventory.AddItem(bars, 2);
+            Check(CraftingSystem.TryCraft(inventory, Recipe(upgradedTool, 1,
+                Ingredient(oldTool, 1), Ingredient(bars, 2))));
+            Check(inventory.GetQuantity(oldTool) == 0 && inventory.GetQuantity(bars) == 0);
+            Check(inventory.GetQuantity(upgradedTool) == 1);
+            inventory = Inventory(2); inventory.AddItem(oldTool); inventory.AddItem(bars, 3);
+            Check(!CraftingSystem.TryCraft(inventory, Recipe(upgradedTool, 1, Ingredient(bars, 2))));
+            Check(inventory.GetQuantity(oldTool) == 1 && inventory.GetQuantity(bars) == 3);
+            inventory = Inventory(3); inventory.AddItem(oldTool); inventory.AddItem(bars, 3);
+            Check(CraftingSystem.TryCraft(inventory, Recipe(upgradedTool, 1, Ingredient(bars, 2))));
+            Check(inventory.GetQuantity(oldTool) == 1 && inventory.GetQuantity(upgradedTool) == 1);
+        });
+        Run("Notifications expire, deduplicate failures and remain bounded", () =>
+        {
+            var feed = new NotificationFeed(2, 3);
+            Check(feed.Post("Inventory Full", "full", 0));
+            Check(!feed.Post("Inventory Full", "full", 2));
+            Check(feed.GetText(3) == ""); // repeats did not extend expiry
+            Check(feed.Post("+1 Iron", null, 4));
+            Check(feed.Post("+1 Coal", null, 4));
+            Check(feed.Post("Created Bar", null, 4));
+            Check(feed.GetText(4) == "+1 Coal\nCreated Bar");
+            Check(!feed.Post("", null, 4) && !feed.Post("Bad", null, double.NaN));
+            Check(feed.GetText(7) == "");
+            feed.Post("Temporary", null, 8); feed.Clear(); Check(feed.GetText(8) == "");
+        });
+        Run("Notification API is explicit and removable", () =>
+        {
+            int events = 0;
+            Action<string, string> handler = (message, key) => events++;
+            GameplayNotifications.Posted += handler;
+            GameplayNotifications.Show(" "); GameplayNotifications.Show("Created Bar");
+            GameplayNotifications.Posted -= handler;
+            GameplayNotifications.Show("No listener");
+            Check(events == 1);
+        });
+        Console.WriteLine($"Passed {passed} inventory/crafting/feedback regression scenarios.");
     }
 
     static PlayerInventory Inventory(int capacity)

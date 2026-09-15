@@ -9,7 +9,8 @@ public class PlayerController : MonoBehaviour
 
     public bool ControlsEnabled => controlsEnabled &&
         blockedInputFrame != Time.frameCount &&
-        !(InventoryUI.Instance != null && InventoryUI.Instance.IsOpen);
+        !(InventoryUI.Instance != null && InventoryUI.Instance.IsOpen) &&
+        !(NetUI.Instance != null && NetUI.Instance.IsOpen);
 
     public void BlockControlsForCurrentFrame()
     {

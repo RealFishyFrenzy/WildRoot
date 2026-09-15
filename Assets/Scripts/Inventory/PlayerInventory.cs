@@ -9,6 +9,22 @@ public class PlayerInventory : MonoBehaviour
     public InventorySlot[] Slots => slots;
     public event Action Changed;
 
+    // Move/swap whole contents, keeping slot objects and quantities intact.
+    public bool TryMoveOrSwap(int sourceIndex, int destinationIndex)
+    {
+        InventorySlot source = GetSlot(sourceIndex);
+        InventorySlot destination = GetSlot(destinationIndex);
+        if (sourceIndex == destinationIndex || source == null || destination == null || source.IsEmpty)
+            return false;
+
+        var previous = new InventorySlot();
+        previous.CopyContentsFrom(destination);
+        destination.CopyContentsFrom(source);
+        source.CopyContentsFrom(previous);
+        Changed?.Invoke();
+        return true;
+    }
+
     private void Awake()
     {
         for (int i = 0; i < slots.Length; i++)
@@ -69,6 +85,29 @@ public class PlayerInventory : MonoBehaviour
         return index < 0 || index >= slots.Length ? null : slots[index];
     }
 
+    // Match the captured instance, not an ItemData or a slot that may have moved.
+    public bool RecordToolUse(ToolInstance instance, bool succeeded)
+    {
+        if (instance == null || !succeeded)
+            return false;
+        foreach (InventorySlot slot in slots)
+        {
+            if (!ReferenceEquals(slot.ToolState, instance))
+                continue;
+            if (!instance.RecordUse(succeeded))
+                return false;
+
+            if (instance.IsBroken)
+            {
+                slot.Clear();
+            }
+
+            Changed?.Invoke();
+            return true;
+        }
+        return false;
+    }
+
     public bool CanExchange(
         IReadOnlyDictionary<ItemData, int> ingredients, ItemData output, int outputAmount)
     {
@@ -109,14 +148,17 @@ public class PlayerInventory : MonoBehaviour
 
     private static bool IsValidAmount(ItemData item, int amount)
     {
-        return item != null && amount > 0 && (!item.stackable || item.maxStack > 0);
+        return item != null && amount > 0 && (item is ToolItem || !item.stackable || item.maxStack > 0);
     }
 
     private InventorySlot[] CopySlots()
     {
         InventorySlot[] copy = new InventorySlot[slots.Length];
         for (int i = 0; i < slots.Length; i++)
-            copy[i] = new InventorySlot { item = slots[i].item, quantity = slots[i].quantity };
+        {
+            copy[i] = new InventorySlot();
+            copy[i].CopyContentsFrom(slots[i]);
+        }
         return copy;
     }
 
@@ -125,8 +167,7 @@ public class PlayerInventory : MonoBehaviour
         // Preserve slot references held by existing scene/UI code.
         for (int i = 0; i < slots.Length; i++)
         {
-            slots[i].item = plannedSlots[i].item;
-            slots[i].quantity = plannedSlots[i].quantity;
+            slots[i].CopyContentsFrom(plannedSlots[i]);
         }
         Changed?.Invoke();
     }
@@ -145,7 +186,8 @@ public class PlayerInventory : MonoBehaviour
     private static int AddToSlots(InventorySlot[] targetSlots, ItemData item, int amount)
     {
         int remaining = amount;
-        if (item.stackable)
+        bool stackable = item.stackable && !(item is ToolItem);
+        if (stackable)
         {
             foreach (InventorySlot slot in targetSlots)
             {
@@ -165,7 +207,7 @@ public class PlayerInventory : MonoBehaviour
             if (!slot.IsEmpty)
                 continue;
 
-            int added = item.stackable ? Mathf.Min(item.maxStack, remaining) : 1;
+            int added = stackable ? Mathf.Min(item.maxStack, remaining) : 1;
             slot.item = item;
             slot.quantity = added;
             remaining -= added;

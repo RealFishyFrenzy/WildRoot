@@ -12,9 +12,17 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="UnityStubs.cs" />
+    <Compile Include="ToolTests.cs" />
+    <Compile Include="HandCraftingTests.cs" />
     <Compile Include="../../Assets/Scripts/Inventory/PlayerInventory.cs" />
     <Compile Include="../../Assets/Scripts/Inventory/InventorySlot.cs" />
     <Compile Include="../../Assets/Scripts/Items/ItemData.cs" />
+    <Compile Include="../../Assets/Scripts/Items/Tool*.cs" />
+    <Compile Include="../../Assets/Scripts/Resources/ToolTarget.cs" />
+    <Compile Include="../../Assets/Scripts/World/TerrainToolSystem.cs" />
+    <Compile Include="../../Assets/Scripts/World/TerrainType.cs" />
+    <Compile Include="../../Assets/Scripts/World/UI/NotificationFeed.cs" />
+    <Compile Include="../../Assets/Scripts/World/UI/GameplayNotifications.cs" />
     <Compile Include="../../Assets/Scripts/Crafting/*.cs" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />

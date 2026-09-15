@@ -9,6 +9,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1729986162578346778, guid: f3040d9d7368bcd4688603850ecfd811, type: 3}
+      propertyPath: maximumHitsToBreak
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729986162578346778, guid: f3040d9d7368bcd4688603850ecfd811, type: 3}
+      propertyPath: minimumHitsToBreak
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1729986162578346778, guid: f3040d9d7368bcd4688603850ecfd811, type: 3}
       propertyPath: drops.Array.data[0].item
       value: 
       objectReference: {fileID: 11400000, guid: 58c36a8bd8fe0d048808d28626337cbf, type: 2}

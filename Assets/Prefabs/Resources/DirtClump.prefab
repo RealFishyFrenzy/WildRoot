@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2320837080331512247}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.56, y: -2.54, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.51, y: -2.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -156,6 +156,9 @@ MonoBehaviour:
   health: 3
   shakeAmount: 3
   shakeDuration: 0.12
-  resourceItem: {fileID: 11400000, guid: ea29c6f6bd967aa42a725ae47433cb6f, type: 2}
-  resourceAmount: 4
+  drops:
+  - item: {fileID: 11400000, guid: ea29c6f6bd967aa42a725ae47433cb6f, type: 2}
+    minAmount: 3
+    maxAmount: 4
+    dropChance: 1
   worldItemDropPrefab: {fileID: 7657241960088815776, guid: 9a5176ae7ebe58748a6a9b202aabf1d0, type: 3}

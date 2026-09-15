@@ -18,14 +18,24 @@ public class CaveResourceSpawner : MonoBehaviour
     [SerializeField] private Collider2D[] blockedSpawnZones;
 
     private readonly List<Vector3> spawnedPositions = new();
+    private bool hasSpawned;
 
     private void Start()
     {
+        if (!hasSpawned) SpawnNodes();
+    }
+
+    // Debug caller removes existing nodes first. Reuse the normal placement rules.
+    public void DebugRespawnNodes()
+    {
+        if (!Debug.isDebugBuild) return;
+        spawnedPositions.Clear();
         SpawnNodes();
     }
 
     private void SpawnNodes()
     {
+        hasSpawned = true;
         if (spawnArea == null ||
             nodePrefabs == null ||
             nodePrefabs.Length == 0)

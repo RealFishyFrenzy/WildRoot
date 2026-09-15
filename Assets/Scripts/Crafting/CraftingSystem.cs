@@ -14,7 +14,7 @@ public static class CraftingSystem
             inventory.TryExchange(ingredients, recipe.outputItem, recipe.outputAmount);
     }
 
-    private static bool TryGetIngredients(
+    public static bool TryGetIngredients(
         CraftingRecipe recipe, out Dictionary<ItemData, int> ingredients)
     {
         ingredients = new Dictionary<ItemData, int>();

@@ -6,16 +6,30 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 movement;
+    private bool movementLocked;
 
     public Vector2 FacingDirection { get; private set; } = Vector2.down;
+    public bool MovementLocked => movementLocked;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
+    public void SetMovementLocked(bool locked)
+    {
+        movementLocked = locked;
+        movement = Vector2.zero;
+
+        if (locked && rb != null)
+            rb.linearVelocity = Vector2.zero;
+
+        Debug.Log($"Player movement locked: {movementLocked}");
+    }
+
     private void Update()
     {
-        if (!PlayerController.Instance.ControlsEnabled)
+        if (!PlayerController.Instance.ControlsEnabled || movementLocked)
         {
             movement = Vector2.zero;
             return;
@@ -34,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!PlayerController.Instance.ControlsEnabled)
+        if (!PlayerController.Instance.ControlsEnabled || movementLocked)
         {
             movement = Vector2.zero;
             return;

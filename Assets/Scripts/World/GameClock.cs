@@ -49,7 +49,6 @@ public class GameClock : MonoBehaviour
 
     private void OnMinuteChanged(GameTime time)
     {
-        Debug.Log(time.ToString(), this);
         MinuteChanged?.Invoke(time);
     }
 }

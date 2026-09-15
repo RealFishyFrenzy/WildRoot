@@ -18,7 +18,7 @@ public class TerrainToolSystem : MonoBehaviour
 
     public bool UseTool(ToolItem tool, Vector3 worldPosition)
     {
-        if (tool == null || tool.toolType != ToolType.Shovel)
+        if (tool == null || tool.toolType != ToolType.Shovel || TerrainManager.Instance == null)
             return false;
 
         TerrainType terrain =
@@ -27,12 +27,12 @@ public class TerrainToolSystem : MonoBehaviour
         switch (terrain)
         {
             case TerrainType.Sand:
-                SpawnDrop(sandItem, worldPosition);
+                if (!SpawnDrop(sandItem, worldPosition)) return false;
                 Debug.Log("Dug up Sand!");
                 return true;
 
             case TerrainType.Grass:
-                SpawnDrop(dirtItem, worldPosition);
+                if (!SpawnDrop(dirtItem, worldPosition)) return false;
                 Debug.Log("Dug up Dirt!");
                 return true;
         }
@@ -40,14 +40,15 @@ public class TerrainToolSystem : MonoBehaviour
         return false;
     }
 
-    private void SpawnDrop(ItemData item, Vector3 position)
+    private bool SpawnDrop(ItemData item, Vector3 position)
     {
         if (item == null || worldItemDropPrefab == null)
-            return;
+            return false;
 
         WorldItemDrop drop =
             Instantiate(worldItemDropPrefab, position, Quaternion.identity);
 
         drop.Setup(item, 1);
+        return true;
     }
 }

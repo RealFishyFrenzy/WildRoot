@@ -1,8 +1,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimalEnclosure : MonoBehaviour, IInteractable
+public class AnimalEnclosure : MonoBehaviour, IInteractable, IInteractionPrompt
 {
+    public string InteractionLabel => "Inspect " + enclosureName;
     [Header("Enclosure")]
     [SerializeField] private string enclosureName = "Unnamed Enclosure";
     [SerializeField] private int animalCapacity = 10;

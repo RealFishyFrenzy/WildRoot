@@ -101,6 +101,58 @@ static class Program
 
     static void RunAdditionalChecks()
     {
+        var limited = new AnimalInventory();
+        Check(limited.Capacity == 5, "Basic net capacity must be five");
+        int capacityEvents = 0; limited.Changed += () => capacityEvents++;
+        for (int i = 0; i < 5; i++)
+            Check(limited.AddAnimal(new AnimalInstance(null, "Stored " + i, 10 + i, 100, 0, AnimalSex.Unknown)), "Fill net");
+        var extra = new AnimalInstance(null, "Extra", 22.123f, 99, 2, AnimalSex.Female);
+        Check(!limited.AddAnimal(extra) && capacityEvents == 5 && !limited.HasSpace, "Full net admitted animal/notified");
+        var sourceTank = new AnimalEnclosure(); sourceTank.AddAnimal(extra);
+        Check(!limited.TryTakeFromEnclosure(sourceTank, extra) && sourceTank.Animals[0] == extra,
+            "Full net removed animal from tank");
+        var live = Spawn(new AnimalInstance(new AnimalData(), "Live", 44.123f, 88, 1, AnimalSex.Male));
+        var fullCatcher = new CatchableAnimal();
+        Set(fullCatcher, "animal", live); Set(fullCatcher, "animalInventory", limited); Call(fullCatcher, "Awake");
+        Check(!fullCatcher.UseTool(ToolType.Net, 1) && live.enabled && live.FoodLevel == 44.123f,
+            "Full capture disabled or changed world animal");
+        live.enabled = false;
+        Set(limited, "capacity", 7); // configuration fixture; not UI hardcoding
+        Check(limited.Capacity == 7 && limited.TryTakeFromEnclosure(sourceTank, extra), "Configured capacity/transfer failed");
+        Check(sourceTank.Animals.Count == 0 && limited.Contains(extra) && extra.foodLevel == 22.123f,
+            "Successful tank transfer changed state");
+        Check(!limited.AddAnimal(extra), "Duplicate record admitted");
+        Set(limited, "capacity", 2);
+        Check(limited.Count == 6 && !limited.HasSpace, "Lower capacity deleted existing animals");
+        Check(AnimalPresentation.Compact(extra).Contains("Female") &&
+            AnimalPresentation.Compact(extra).Contains("Unknown Species"), "Tooltip missing-data/sex formatting");
+        Check(AnimalPresentation.Details(extra).Contains("Health:") && AnimalPresentation.Details(extra).Contains("Age:"),
+            "Details not richer than tooltip");
+        Check(AnimalPresentation.Number(float.NaN) == "Unknown" && extra.foodLevel == 22.123f,
+            "Presentation corrupted record or invalid value");
+        Console.WriteLine("PASS: capacity five/configurable, full catch/tank rejection, exact transfer, duplicates, over-capacity preservation and shared formatting.");
+
+        // Menu list uses the same multi-animal storage and listens only to mutations.
+        var listStorage = new AnimalInventory();
+        var first = new AnimalInstance(null, "First", 12.345f, 80, 0, AnimalSex.Unknown);
+        var second = new AnimalInstance(null, "Second", 67.891f, 90, 1, AnimalSex.Female);
+        int changes = 0;
+        Action changed = () => changes++;
+        listStorage.Changed += changed;
+        listStorage.AddAnimal(null);
+        Check(!listStorage.Contains(null) && changes == 0, "Null list operation notified");
+        listStorage.AddAnimal(first); listStorage.AddAnimal(second);
+        Check(changes == 2 && listStorage.Animals.Count == 2, "Multi-animal list failed");
+        Check(ReferenceEquals(listStorage.Animals[1], second) && listStorage.Contains(second), "Second animal identity lost");
+        Check(listStorage.RemoveAnimal(second) && changes == 3, "Second animal removal failed");
+        Check(!listStorage.RemoveAnimal(second) && changes == 3, "Failed removal notified");
+        Check(listStorage.Animals[0] == first && first.foodLevel == 12.345f && second.foodLevel == 67.891f,
+            "List mutation changed animal food/state");
+        listStorage.Changed -= changed;
+        listStorage.RemoveAnimal(first);
+        Check(changes == 3, "Unsubscribed list listener invoked");
+        Console.WriteLine("PASS: multi-animal storage, non-first identity/removal, exact food, mutation notifications and unsubscribe.");
+
         var data = new AnimalData { foodLossPerGameHour = 3 };
         var instance = new AnimalInstance(data, "Lifecycle", 80, 95, 4, AnimalSex.Female);
         var animal = Spawn(instance);

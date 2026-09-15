@@ -8,6 +8,8 @@ public class CraftingRecipe : ScriptableObject
 {
     [Header("Recipe")]
     public string recipeName;
+    // Zero preserves existing station-only recipes without asset migration.
+    public RecipeContext context = RecipeContext.StationProcessing;
 
     [Header("Ingredients")]
     public CraftingIngredient[] ingredients;
